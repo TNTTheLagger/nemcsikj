@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int ekek(char asd[80])
+{
+   int db=0;
+   for(int i=0; i<80; i++)
+      {
+      if(asd[i]=='e')
+      db++;
+       }
+return db;
+}
+
+int main()
+{
+char macska[80];
+cin >> macska;
+int a=ekek(macska);
+cout << a << "db e betû van" << endl;
+return 0;
+}

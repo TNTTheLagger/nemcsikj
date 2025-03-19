@@ -1,0 +1,109 @@
+---------------------------------------------
+//Elöltesztelõ ciklus - újabb verzió
+#include <iostream>
+using namespace std;
+#define n 20 // Itt definiálok egy állandót.
+#define pluszjel "+" // Ez egy újabb
+#define egyenlo "=" // Ez pedig az utolsó
+ 
+int main()
+{
+cout <<"Ez egy elo:ltesztelo: ciklus!\n ";
+int szam = 1;
+int osszeg = 0;
+while (szam<n+1)
+{
+ osszeg = osszeg + szam; // növeljük az összeget a számmal
+ cout <<szam;
+ if (szam<n) cout <<pluszjel; else cout <<egyenlo;
+ szam++; // A számot növeljük eggyel
+}
+cout <<osszeg <<endl;
+return 0;
+}
+---------------------------------------------
+---------------------------------------------
+//Hátultesztelõ ciklus
+#include <iostream>
+using namespace std;
+#define n 10 // Itt definiálok egy állandót.
+#define pluszjel "+" // Ez egy újabb
+#define egyenlo "=" // Ez pedig az utolsó
+
+ 
+int main()
+ 
+{
+cout <<"Ez egy hatultesztelo: ciklus!\n ";
+int szam = 0;
+int osszeg = 0;
+do
+ {
+ osszeg = osszeg + szam;
+ szam++;
+ cout <<szam;
+ if (szam<n) cout <<pluszjel; else cout <<egyenlo;
+ }
+ 
+while (szam <n);
+cout <<osszeg <<endl;
+}
+---------------------------------------------
+---------------------------------------------
+ 
+//Kérjen be a billentyûzetrõl egy pozitív egész számot 
+és 1-tõl a bekért számig adja össze a számok négyzetét!
+#include <iostream>
+using namespace std;
+#define pluszjel "+" // Állandó definiálása
+#define egyenlo "=" // Még egy
+#define szorzas "*" // Még egy
+ 
+int main()
+{
+int n;
+cout <<"Ez egy elo:ltesztelo: ciklus!\n 
+Kérek egy pozitiv egesz szamot!";
+cin >>n;
+int szam = 1;
+int osszeg = 0;
+while (szam<n+1)
+ {
+ osszeg = osszeg + szam*szam; // növeljük az összeget a szám négyzetével
+ cout <<szam <<szorzas <<szam;
+ if (szam<n) cout <<pluszjel; else cout <<egyenlo;
+ szam++; // A számot növeljük eggyel
+ }
+cout <<osszeg <<endl;
+return 0;
+}
+---------------------------------------------
+//Kérjen be egy számot, szorozza meg kettõvel és adjon
+ hozzá egyet és az így kapott páratlan számig adja össze 
+a pozitív páratlan számokat!
+#include <iostream>
+using namespace std;
+#define pluszjel "+" // Állandó definiálása
+#define egyenlo "=" // Újabb
+ 
+int main()
+{
+int x, eddig;
+cout <<"Ez egy hatultesztelo: ciklus!\n Kerek egy pozitív egesz szamot!";
+cin >>x;
+eddig = 2*x+1; //Így biztos, hogy pozitív páratlan 
+                 lesz a szám!
+int szam = 1;
+int osszeg = 0;
+do
+ {
+ osszeg = osszeg + szam;
+ cout <<szam;
+ szam = szam + 2;
+ if (szam<eddig) cout <<pluszjel;
+ else cout <<egyenlo;
+ }
+while (szam < eddig);
+cout <<osszeg <<endl;
+}
+---------------------------------------------

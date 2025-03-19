@@ -1,0 +1,1 @@
+["Csekk","Csomag","Levél","Utalvány","Csekk","Csekk","Csomag","Utalvány","Utalvány","Levél","Levél","Levél","Levél","Levél","Csomag","Csomag","Csekk","Utalvány","Csekk","Csekk","Utalvány","Utalvány","Utalvány","Levél","Levél","Levél","Csomag"]

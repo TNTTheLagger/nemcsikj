@@ -1,0 +1,9 @@
+C:\Users\Kristonda\Desktop\Kisnagy\bin\Debug\Kisnagy.exe
+C:\Users\Kristonda\Desktop\Kisnagy\bin\Debug\Kisnagy.pdb
+C:\Users\Kristonda\Desktop\Kisnagy\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kristonda\Desktop\Kisnagy\obj\x86\Debug\Kisnagy.exe
+C:\Users\Kristonda\Desktop\Kisnagy\obj\x86\Debug\Kisnagy.pdb
+J:\C#\c#feladatok\Kisnagy\obj\x86\Debug\Kisnagy.exe
+J:\C#\c#feladatok\Kisnagy\obj\x86\Debug\Kisnagy.pdb
+J:\C#\c#feladatok\Kisnagy\bin\Debug\Kisnagy.exe
+J:\C#\c#feladatok\Kisnagy\bin\Debug\Kisnagy.pdb

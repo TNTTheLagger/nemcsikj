@@ -1,0 +1,135 @@
+#include<stdio.h>
+ #include<conio.h>
+ #include "graphics.h"
+ #include<stdlib.h>
+ #include<dos.h>
+ 
+main()
+ {
+ 
+ int Gd, Gm, Hibakod, j, k, l, m, n, o, p, q, r, s, t, u, v, w, a, b, c, d, e, f, g, h, a1, b1, c1, d1, e1, f1, i;
+  Gd=DETECT;
+  initgraph(&Gd,&Gm, "..\\BGI");
+  Hibakod=graphresult();
+ 
+ if(Hibakod)
+  {
+  printf("Hiba");
+  exit(-1);
+ 
+ }
+  randomize();
+  j=50;k=50,l=50,m=50,n=50,o=50,p=50,q=50,r=50,s=50,t=50,u=50,v=50,w=50;
+  do
+  {
+   a=random(5);
+   j=j+a;
+   line(j,10,j+10,10);
+   circle(j,5,5);
+   delay(20);
+   cleardevice();
+ 
+  b=random(5);
+   k=k+b;
+   line(k,30,k+10,30);
+   circle(k,25,5);
+   delay(20);
+   cleardevice();
+ 
+  c=random(5);
+   l=l+c;
+   line(l,50,l+10,50);
+   circle(l,45,5);
+   delay(20);
+   cleardevice();
+ 
+  d=random(5);
+   m=m+d;
+   line(m,70,m+10,70);
+   circle(m,65,5);
+   delay(20);
+   cleardevice();
+ 
+  e=random(5);
+   n=n+e;
+   line(n,90,n+10,90);
+   circle(n,85,5);
+   delay(20);
+   cleardevice();
+ 
+  f=random(5);
+   o=o+f;
+   line(o,110,o+10,110);
+   circle(o,105,5);
+   delay(20);
+   cleardevice();
+ 
+  g=random(5);
+   p=p+g;
+   line(p,130,p+10,130);
+   circle(p,125,5);
+   delay(20);
+   cleardevice();
+ 
+  h=random(5);
+   q=q+h;
+   line(q,150,q+10,150);
+   circle(q,145,5);
+   delay(20);
+   cleardevice();
+ 
+  a1=random(5);
+   r=r+a1;
+   line(r,170,r+10,170);
+   circle(r,165,5);
+   delay(20);
+   cleardevice();
+ 
+  b1=random(5);
+   s=s+b1;
+   line(s,190,s+10,190);
+   circle(s,185,5);
+   delay(20);
+   cleardevice();
+ 
+  c1=random(5);
+   t=t+c1;
+   line(t,210,t+10,210);
+   circle(t,205,5);
+   delay(20);
+   cleardevice();
+ 
+  d1=random(5);
+   u=u+d1;
+   line(u,230,u+10,230);
+   circle(u,225,5);
+   delay(20);
+   cleardevice();
+ 
+  e1=random(5);
+   v=v+e1;
+   line(v,250,v+10,250);
+   circle(v,245,5);
+   delay(20);
+   cleardevice();
+ 
+  f1=random(5);
+   w=w+f1;
+   line(w,270,w+10,270);
+   circle(w,265,5);
+   delay(20);
+   cleardevice();
+ 
+
+
+
+  }while(k<=100 && j<=100 && l<=100 && m<=100 && n<=100 && o<=100 && p<=100 && q<=100 && r<=100 && s<=100 && t<=100 && u<=100 && v<=100);
+  closegraph();
+  if(j>k && j>l && j>m && j>n && j>o && j>p && j>q && j>r && j>s && j>t && j>u && j>v && j>w)
+   printf("Tibi csig ja nyert");
+  else if(
+   printf("A 2. nyert");
+ 
+ getch();
+ 
+ }

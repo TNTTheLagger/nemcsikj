@@ -1,0 +1,492 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://pc11.fellner.sulinet.hu/jaki/oktatas/sql.htm -->
+<HTML><HEAD><TITLE>SQL parancsok - oktatási segédanyag</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1250">
+<META content=BF name=Author>
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#551a8b aLink=#ff0000 link=#0000ee bgColor=#294d63>
+<CENTER><B><FONT face=Tahoma><FONT color=#ffffff><FONT 
+size=+2>Számítástechnika</FONT></FONT></FONT></B></CENTER>
+<CENTER>
+<TABLE cellSpacing=0 cols=1 cellPadding=4 width="70%" bgColor=#ffffff 
+  border=1><TBODY>
+  <TR>
+    <TD><B><FONT face=Tahoma><FONT size=+1>Fontosabb MS-ACCESS 97 SQL 
+      parancsok</FONT></FONT></B><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A példákhoz kapcsolódó adatbázis 
+      megtalálható az F:\OKTINF\ADATB\NWIND alkönyvtárban.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>1.1 Tábla létrehozása: CREATE 
+      TABLE</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>Szintaxis:</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>CREATE TABLE tábla_neve</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>(mező1 típus [(méret)] [NOT NULL] [ CONSTRAINT…],</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>mező2 típus [(méret)] [NOT NULL] [ 
+      CONSTRAINT…],…);</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A CREATE TABLE utasítás 
+      részei:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>tábla - A 
+      létrehozandó tábla neve</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>mező1, mező2 - Az új tábla mezőjének vagy mezőinek neve. Legalább 
+      egy mezőt létre kell hoznunk.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>típus - Az új tábla mezőjének adattípusa</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>méret - A mező mérete karakterben (csak Szöveg 
+      és Bináris mezőnél)</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>NOT 
+      NULL - Kötelező adatbevitel</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>CONSTRAINT … - Megkötések egy mezőre</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa létrehoz egy új táblát 
+      (PróbaTábla1 névvel) két Szöveg típusú mezővel:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>CREATE TABLE [Próba Tábla1]&nbsp;</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>(Vezetéknév TEXT, Keresztnév 
+      TEXT);</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>(Ha az azonosítóban szóköz van, akkor 
+      azt szögletes zárójelbe kell tenni!!!)</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa létrehoz egy új 
+      táblát két Szöveg típusú és egy Dátum/Idő típusú mezővel, továbbá egy 
+      egyedi indexszel, amely mindhárom mezőt tartalmazza:</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>CREATE TABLE [Próba 
+      Tábla2]&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>(Vezetéknév TEXT,Keresztnév TEXT,[Születési dátum] 
+      DATETIME,</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>CONSTRAINT 
+      TöbbmezősIndexNeve UNIQUE (Vezetéknév, Keresztnév, [Születési 
+      dátum]));</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa létrehoz egy új 
+      táblát két Szöveg típusú és egy Egész típusú mezővel. Az SSN mező az 
+      elsődleges kulcs.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>CREATE 
+      TABLE [Próba Tábla3]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>(SSN INTEGER CONSTRAINT ElsődlegesKulcsNeve PRIMARY 
+      KEY,</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Vezetéknév TEXT, 
+      Keresztnév TEXT);</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa létrehoz egy új 
+      táblát elsődleges- és idegenkulccsal, és mindenféle 
+      csingilingivel:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>CREATE 
+      TABLE [Próba Tábla4]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>(Rendeléskód INTEGER CONSTRAINT ElsődlegesKulcsNeve PRIMARY 
+      KEY,</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Címzett TEXT NOT 
+      NULL,&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Irányítószám 
+      TEXT CONSTRAINT EgyediIndexNeve UNIQUE,</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Vevőkód TEXT (5) CONSTRAINT KülsőKulcsNeve 
+      REFERENCES Vevők);</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.2 Indexek létrehozása – CREATE 
+      INDEX</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Új index 
+      létrehozása a már létező táblán</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>Szintaxis:</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>CREATE [ UNIQUE ] INDEX index_neve</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>ON tábla&nbsp;</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>(mező1 [ASC|DESC],</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>mező2 [ASC|DESC],…[WITH…]);</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A CREATE INDEX utasítás 
+      részei:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>UNIQUE – Egyedi 
+      index (ismétlődések nem fordulhatnak elő a mezőben)</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>index - A létrehozandó index 
+      neve</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>tábla - A tábla 
+      neve, amelyet indexelni akarunk.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>mező - A indexelendő mező(k) neve(i). Egymezős index esetén írjuk 
+      a mező nevét zárójelben a tábla neve után. Többmezős index esetén soroljuk 
+      fel azokat a mezőket, amelyekre az index vonatkozik. Csökkenő sorrend 
+      létrehozásához használjuk a DESC foglalt szót; egyébként a sorrend növekvő 
+      (ASC).</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WITH – Ezzel a 
+      záradékkal az adatok érvényességi szabályait határozhatjuk meg (megadása 
+      nem kötelező):</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A 
+      DISALLOW NULL beállítással tilthatjuk a Null értékű bejegyzéseket az új 
+      rekordok mezőibe.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Az 
+      IGNORE NULL beállítás esetén a Null értékű mezővel rendelkező rekordok nem 
+      fognak az indexben szerepelni.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>A PRIMARY beállítással az indexelt mező(ke)t elsődleges kulcsként 
+      jelöljük meg. Ez magába foglalja a kulcs egyediségét is, ezért nem kell a 
+      UNIQUE foglalt szót használnunk.</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa létrehoz az Alkalmazottak 
+      táblához egy új indexet, mely az Otthoni telefon és a Mellék mezőből 
+      áll.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>CREATE INDEX 
+      ÚjIndexNeve ON Alkalmazottak (Otthoni telefon, Mellék);</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa létrehoz a Vevők 
+      táblához egy új indexet a Vevőkód mező alapján. Nem létezhet két rekord 
+      ugyanazzal a Vevőkód értékkel, és nincs engedélyezve a Null 
+      érték.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>CREATE UNIQUE 
+      INDEX CustID ON Vevők (Vevőkód) WITH DISALLOW 
+      NULL;&nbsp;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.3 Indexek törlése – DROP 
+      INDEX</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>DROP INDEX index_név ON 
+      táblanév;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példa:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Az előző példában létrehozott indexet a DROP 
+      utasítás segítségével lehet törölni. A tábla Tervező nézetében az index 
+      kizárólag akkor törölhető, ha a Vevők táblához tartozó kapcsolatot is 
+      töröljük. A következő kódrészlet a DROP utasítás segítségével törli az új 
+      indexet.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>DROP INDEX CustID ON 
+      Vevők;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.4 Adatbevitel táblákba – INSERT 
+      INTO</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Egy vagy több 
+      rekordot ad hozzá a táblához. Ezt hozzáfűző lekérdezésnek 
+      hívják.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Több rekordot létrehozó hozzáfűző 
+      lekérdezés:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>INSERT INTO 
+      cél_tábla [(mező1, mező2, ...)]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>SELECT [mező1, mező2, ...]</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>FROM forrás_tábla;</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Egyetlen rekordot létesítő hozzáfűző 
+      lekérdezés:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>INSERT INTO 
+      cél_tábla [(mező1, mező2, ...)]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>VALUES (érték1, érték2, ...);</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Az INSERT INTO utasítás a következő 
+      részekből áll:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Cél_tábla 
+      - A tábla neve, melyhez hozzá szeretnénk fűzni az új 
+      rekordokat.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Forrás_tábla 
+      - A tábla vagy lekérdezés neve, melyből a rekordokat át szeretnénk 
+      másolni.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>mező1, mező2 - 
+      Ha cél argumentum után szerepelnek, az új rekordban kitöltendő mezők 
+      nevei, ha forrás argumentum után szerepelnek, akkor ezekből a mezőkből 
+      veendők az adatok.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>érték1, érték2 - Az új rekord egyes mezőibe írandó értékek. Minden 
+      érték a vele a listában azonos pozíción szereplő mezőbe kerül: az érték1 a 
+      mező1-be, az érték2 a mező2-be, és így tovább. Az értékeket vesszővel 
+      választjuk el és a szöveges értékeket idézőjelbe (" ") 
+      tesszük.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Ha ki szeretnénk próbálni a következő példákat, 
+      akkor hozzunk létre egy másolatot a Vevők tábláról Vevők2 névvel (csak a 
+      struktúrát másolja le).&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>A példa kijelöli a Vevők tábla valamennyi rekordját, és hozzáadja 
+      a Vevők2 táblához. Ha nincsenek külön megjelölve az oszlopnevek, akkor a 
+      SELECT és az INSERT INTO utasításban szereplő oszlopneveknek meg kell 
+      egyezniük.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>INSERT INTO 
+      Vevők2 SELECT * FROM [Vevők];</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa létrehoz egy új 
+      rekordot az Alkalmazottak táblában:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>INSERT INTO Alkalmazottak (Keresztnév, 
+      Vezetéknév, Beosztás)&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>VALUES ('Pista', 'Budai', 'Gyakornok');</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa egy feltételezett 
+      Tanulók táblából kiválaszt minden olyan gyakornokot, aki több, mint 30 
+      napja van a vállalatnál, és az őket tartalmazó rekordokat hozzáadja az 
+      Alkalmazottak táblához.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>INSERT INTO Alkalmazottak SELECT Gyakornok.* FROM 
+      Tanulók&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE 
+      [Belépés dátuma] &lt; Now() - 30;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.5 Adatok módosítása - 
+      UPDATE</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Frissítő 
+      lekérdezést hoz létre, amely a megadott tábla mezőit módosítja a megadott 
+      feltétel alapján.&nbsp;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>UPDATE tábla</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SET új érték</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>WHERE feltétel;</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Az UPDATE utasítás a következő 
+      részekből áll:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Tábla - 
+      Azon tábla neve, amelynek adatait módosítani szeretnénk.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>új érték - Az a kifejezés, amely 
+      meghatározza, milyen érték kerül be a módosítandó rekordok egyes 
+      mezőibe.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Feltétel - Az a 
+      kifejezés, amely meghatározza, mely rekordok módosulnak. Csak a 
+      kifejezésnek eleget tevő rekordok változnak.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Megjegyzés:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Az UPDATE különösen akkor hasznos, amikor sok 
+      rekordot szeretnénk módosítani, vagy amikor a módosítandó rekordok több 
+      különböző táblában vannak.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>Egyszerre több mezőt is módosíthatunk.&nbsp;</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>Az UPDATE nem hoz létre 
+      eredményhalmazt. Ha a rekordokat frissítő lekérdezéssel módosítjuk, a 
+      műveletet nem lehet visszavonni. Ha látni szeretnénk, mely rekordok 
+      módosulnának, először futtassunk le egy választó lekérdezést ugyanolyan 
+      feltétellel, s ennek eredményét vizsgáljuk meg. Csak ezután futtassuk le a 
+      módosító lekérdezést.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Az 
+      adatokról mindig legyen másolatunk. Ha rossz rekordokat módosítunk, a 
+      másolatból helyreállíthatjuk az eredeti adatokat.</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa minden olyan rekord Felettes 
+      mezőjét 5-re állítja, amelynek jelenleg 2 az értéke.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>UPDATE Alkalmazottak SET Felettes = 5 
+      WHERE Felettes = 2;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa minden olyan termék 
+      egységárát megnöveli 10 százalékkal, amely a 8. számú szállítótól 
+      származik, és amelyből van raktáron.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>UPDATE Termékek SET Egységár = Egységár * 
+      1.1</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE Szállítókód = 
+      8 AND Raktáron&gt;0;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa minden olyan termék 
+      egységárát csökkenti 5 százalékkal, amely a Tokyo Traders nevű szállítótól 
+      származik, és amelyből van raktáron. A Termékek és a Szállítók tábla 
+      között több-az-egyhez kapcsolat van.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>UPDATE Szállítók INNER JOIN 
+      Termékek</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>ON 
+      Szállítók.Szállítókód = Termékek.Szállítókód SET Egységár = Egységár * 
+      .95</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE Cégnév = 
+      'Tokyo Traders' AND Raktáron&gt;0;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.6 Adatok törlése - 
+      DELETE</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Létrehoz egy 
+      törlő lekérdezést, amely a FROM záradékban felsorolt táblákból törli 
+      azokat a rekordokat, amelyek eleget tesznek a WHERE záradék 
+      feltételének.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>DELETE * FROM tábla</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>WHERE feltétel</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A DELETE utasítás két részből 
+      áll:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Tábla - A tábla 
+      neve, amelyből a rekordokat törölni kell</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Feltétel - A törlendő rekordokat kijelölő 
+      kifejezés</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Megjegyzés</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A DELETE különösen hasznos, ha sok rekordot 
+      szeretnénk törölni</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Egész 
+      táblát a DROP TABLE utasítással töröljünk. Ha az egész táblát töröljük, 
+      akkor annak szerkezete is elvész. Ezzel szemben a DELETE használatakor 
+      csak az adatok törlődnek, a tábla szerkezete és minden jellemzője (például 
+      a mezőnevek, az indexek) érintetlen marad.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A DELETE segítségével olyan táblákból is 
+      törölhetünk rekordokat, amelyek más táblákkal egy-a-többhöz kapcsolatban 
+      állnak. Kaszkádolt törlésnél a kapcsolat "több" oldalán levő rekordok is 
+      törlődnek, ha a kapcsolat "egy" oldalán levő rekordot törli a lekérdezés. 
+      Például a Vevők és a Rendelések tábla esetében a Vevők vannak az "egy" 
+      oldalon, a Rendelések a "több" oldalon. Kaszkádolt törlés használatakor a 
+      Vevők táblából törölt rekordokkal együtt a hozzájuk tartozó Rendelések 
+      rekordok is törlődnek.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A 
+      törlő lekérdezés nem egyes mezők adatait törli, hanem a teljes rekordokat. 
+      Ha egyes mezők adatait szeretnénk törölni, használjunk frissítő 
+      lekérdezést, ami a mezők értékét Null értékre változtatja.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>A törlő lekérdezés nem vonható vissza, 
+      a törölt rekordok elvesznek. Ha látni szeretnénk a törlendő rekordokat, 
+      akkor a törlés előtt először vizsgáljuk meg egy ugyanolyan feltételt 
+      használó választó lekérdezés eredményét.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Mindig legyen biztonsági mentés az adatokról. 
+      Így ha rossz rekordokat töröltünk, ezek 
+      visszanyerhetők.</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példa:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Ha a következő példát ki szeretnénk próbálni, 
+      akkor adjunk néhány rekordot az Alkalmazottak táblához, és a Beosztás 
+      mezőbe írjuk be a “Gyakornok” értéket.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa töröl az Alkalmazottak 
+      táblából minden olyan rekordot, amelyben a Beosztás mező értéke 
+      “Gyakornok”.&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>DELETE * FROM Alkalmazottak WHERE Beosztás = 
+      'Gyakornok';</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7 Adatok lekérdezése - 
+      SELECT</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A SELECT utasítás 
+      hatására a Microsoft adatbázis-motor rekordhalmaz formátumú adatokat ad az 
+      adatbázisról.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SELECT [tábla.]mező1 [AS alias1], [tábla.]mező2 
+      [AS alias2] …</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>FROM 
+      tábla1, tábla2, ...</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>[WHERE... ]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>[GROUP BY... ]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>[HAVING... ]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>[ORDER BY... ]</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A SELECT utasítás 
+      részei:</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Tábla - A tábla neve, amely a 
+      kiválasztandó rekordok mezőit tartalmazza.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>mező1, mező2 - A mező neve, amelyben az adatokat 
+      keressük. Ha több mezőt jelölünk meg, azok a megjelölt sorrendben lesznek 
+      visszakeresve.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>alias1, 
+      alias2 - A tábla eredeti oszlopnevei helyett használandó oszlop 
+      fejlécek.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>tábla1, tábla2 
+      - A tábla vagy táblák neve, amelyekből az adatokat vissza szeretnénk 
+      keresni.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Megjegyzés:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Az utasítás végrehajtásakor a Microsoft Jet 
+      adatbázis-motor megkeresi a meghatározott tábla vagy táblák megadott 
+      oszlopait, kiválasztja a feltételeknek megfelelő sorokat, majd sorba rakja 
+      és csoportosítja azokat a megadott sorrendnek megfelelően.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>A SELECT utasítás nem változtatja meg 
+      az adatbázis adatait.</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.1 Legegyszerűbb alak:</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>A csillag (*) használatával a tábla 
+      minden mezőjét kiválasztjuk. A következő utasítás az Alkalmazottak tábla 
+      minden mezőjét kijelöli:</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>SELECT * FROM 
+      Alkalmazottak;</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>1.7.2 Az 
+      ismétlődő sorok elnyomása (DISTINCT)</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Ha azt szeretnénk megtudni, hogy milyen 
+      országból származnak vevőink, akkor az ismétlődő sorokat el kell nyomni, 
+      hiszen egy adott országból több vevő is származhat.</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>SELECT DISTINCT Ország FROM 
+      Vevők;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.3 A WHERE záradék 
+      használata:</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>Meghatározza, hogy a FROM záradékban felsorolt táblák mely 
+      rekordjait érintik a SELECT, UPDATE vagy DELETE 
+      utasítások.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa minden olyan rekord Vezetéknév 
+      és Keresztnév mezőjét kijelöli, melyben a vezetéknév “King”.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>SELECT Vezetéknév, Keresztnév FROM 
+      Alkalmazottak</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE 
+      Vezetéknév = 'King';</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa az Alkalmazottak 
+      táblában minden olyan rekord Vezetéknév és Keresztnév mezőjét kijelöli, 
+      amelyben a vezetéknév S betűvel kezdődik.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SELECT Vezetéknév, Keresztnév FROM 
+      Alkalmazottak</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE 
+      Vezetéknév Like 'S*';</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa kijelöli mindazokat a 
+      rekordokat, melyeknek egységára 2000 és 5000 forint között 
+      van.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT Terméknév, 
+      Egységár FROM Termékek</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>WHERE (Egységár &gt;=2000.00 And Egységár &lt;= 
+      5000.00);</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa minden olyan terméket 
+      kijelöl, amelynek neve betűrend szerint “Cha” és “Out” közé esik (vagy 
+      ezekkel megegyezik). Az “Outback Lager” név nem esik ebbe a tartományba, 
+      mert az “Out” után van.</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>SELECT Terméknév, Egységár FROM Termékek</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>WHERE Terméknév Between 'Cha' And 
+      'Out';</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa kijelöli azokat a 
+      rendeléseket, melyek 1995 első felében születtek.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SELECT Rendeléskód, [Rendelés dátuma] FROM 
+      Rendelések</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>WHERE 
+      [Rendelés dátuma] Between #1-1-95# And #6-30-95#;</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa kijelöli azokat a 
+      rendeléseket, melyek az Egyesült Államok Idaho, Oregon vagy Washington 
+      államába szóltak.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Rendeléskód, Körzet FROM Rendelések</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>WHERE Körzet In ('ID', 'OR', 
+      'WA');</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.4 Táblák összekapcsolása – INNER 
+      JOIN</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>Egyesíti két tábla 
+      rekordjait, ha azok közös mezőjében azonos érték 
+      szerepel.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Szintaxis:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>FROM tábla1 INNER JOIN tábla2 ON tábla1.mező1 
+      hasonlító_művelet tábla2.mező2</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Az INNER JOIN művelet a következő 
+      részekből áll:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>tábla1, 
+      tábla2 - A két tábla neve, melyek rekordjaiból az egyesített rekordok 
+      készülnek.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>mező1, mező2 
+      - Az egyesítendő mezők neve. Ha a mezők nem szám típusúak, ugyanolyan 
+      adattípushoz kell tartozniuk, ugyanolyan jellegű adatokat kell 
+      tartalmazniuk, de a nevük lehet különböző.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Hasonlító_művelet - Bármely összehasonlító 
+      művelet: "=", "&lt;", "&gt;", "&lt;=", "&gt;=" vagy 
+      "&lt;&gt;".</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Megjegyzés:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Az INNER JOIN művelet bármely FROM záradékban 
+      használható. Ez az illesztés leggyakoribb fajtája. Egyesíti két tábla 
+      rekordjait, ha azok közös mezőjében azonos érték szerepel.</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>Az INNER JOIN művelet segítségével 
+      kiválogathatjuk a Részlegek és az Alkalmazottak táblából minden részleg 
+      összes alkalmazottját. Ezzel szemben, ha az összes részleget szeretnénk 
+      kiválogatni (akkor is, ha némelyikhez nincs alkalmazott rendelve), vagy az 
+      összes alkalmazottat (akkor is, ha egyesek nem tartoznak egyik részleghez 
+      sem), a LEFT JOIN vagy RIGHT JOIN művelettel létesíthetünk laza 
+      illesztést.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példa:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa azt mutatja, hogyan 
+      illeszthető a Kategóriák és a Termékek tábla a Kategóriakód mező 
+      segítségével:</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Kategórianév, Terméknév</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>FROM Kategóriák INNER JOIN Termékek</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>ON Kategóriák.Kategóriakód = 
+      Termékek.Kategóriakód;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A példában a Kategóriakód az illesztett 
+      mező, de a lekérdezés eredményében nem jelenik meg, hiszen nem szerepel a 
+      SELECT utasításrészben. Ha az illesztett mezőt is meg szeretnénk 
+      jeleníteni, be kell azt (a fenti példában a Kategóriák.Kategóriakód mezőt) 
+      írni a SELECT után.</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.5 Eredménysorok csoportosítása 
+      (GROUP BY záradék)</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A 
+      megadott mezőben az azonos értékű rekordokat egy rekorddá alakítja át. 
+      Összesítő érték hozható létre minden rekordról, ha SQL összesítő 
+      függvényt, mint például a Sum vagy a Count függvényt, írunk be a SELECT 
+      utasításba.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa szállítónként kiszámítja a 
+      termékek átlagos egységárát, és az árlistát szállítónként 
+      csoportosítja.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Szállítókód, Avg(Egységár) AS [Átlagos egységár]</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>FROM Termékek GROUP BY 
+      Szállítókód;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa kategóriánként 
+      meghatározza a legmagasabb egységárú terméket.</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SELECT Kategóriakód, Max(Egységár) AS 
+      [Legnagyobb egységár]</FONT></FONT> <BR><FONT face=Tahoma><FONT 
+      size=-1>FROM Termékek GROUP BY Kategóriakód;</FONT></FONT><FONT 
+      face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa megszámolja, hány 
+      rendelés tartozik az egyes alkalmazottakhoz a Rendelések 
+      táblában.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Alkalmazottkód, Count(Rendeléskód)AS [Rendelések 
+      száma]&nbsp;</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>FROM 
+      Rendelések GROUP BY Alkalmazottkód;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.6 Csoportosított eredmények szűrése 
+      (HAVING záradék)</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A 
+      záradékban megadhatjuk, hogy a SELECT utasítás GROUP BY záradékával 
+      csoportosított rekordok közül melyek legyenek megjelenítve. Miután a GROUP 
+      BY csoportosítottuk a rekordokat, a HAVING záradékban megadott 
+      feltételeknek megfelelő összes rekord megjelenik a 
+      képernyőn.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>A következő példa kikeresi azokat a szállítókat, 
+      akik által szállított termékek átlagos egységára 2500 forint fölött 
+      van.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT Szállítókód, 
+      Avg(Egységár) AS [Átlagos egységár]</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>FROM Termékek GROUP BY Szállítókód</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>HAVING 
+      (Avg(Egységár)&gt;2500);</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa kijelöli azokat az 
+      alkalmazottakat, akik több, mint 100 rendelést bonyolítottak 
+      le.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Alkalmazottkód, Count(Rendeléskód) AS [Rendelések száma]</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>FROM Rendelések GROUP BY 
+      Alkalmazottkód</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>HAVING 
+      Count(Rendeléskód) &gt; 100;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>1.7.7 Eredménysorok rendezése (ORDER BY 
+      záradék)</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>A lekérdezés 
+      eredményeként kapott rekordok megadott mezőit növekvő vagy csökkenő 
+      sorrendbe rendezi.</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>Példák:</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>Az alábbi SQL utasítások az ORDER BY záradék 
+      segítségével rendezik a rekordokat betűrendbe, illetve kategória 
+      szerint.</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa a rekordokat 
+      vezetéknév szerint rendezi visszafelé betűrendbe&nbsp;</FONT></FONT> 
+      <BR><FONT face=Tahoma><FONT size=-1>(Z-től A-ig).</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>SELECT Vezetéknév, Keresztnév FROM Alkalmazottak 
+      ORDER BY Vezetéknév DESC;</FONT></FONT><FONT face=Tahoma><FONT 
+      size=-1></FONT></FONT> 
+      <P><FONT face=Tahoma><FONT size=-1>A következő példa elsősorban a 
+      kategóriakód, másodsorban a terméknév szerint rendezi a 
+      rekordokat.</FONT></FONT> <BR><FONT face=Tahoma><FONT size=-1>SELECT 
+      Kategóriakód, Terméknév, Egységár FROM Termékek</FONT></FONT> <BR><FONT 
+      face=Tahoma><FONT size=-1>ORDER BY Kategóriakód, 
+      Terméknév;</FONT></FONT><FONT face=Tahoma><FONT size=-1></FONT></FONT> 
+      <P>&nbsp;</P></TD></TR></TBODY></TABLE></CENTER></BODY></HTML>

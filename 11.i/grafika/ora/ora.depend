@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1401259553 source:g:\prog\0528\ora\main.cpp
+	<iostream>
+	"G:\prog\c\graphics.h"
+	<windows.h>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+
+1399457781 g:\prog\c\graphics.h
+	<math.h>
+

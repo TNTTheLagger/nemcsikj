@@ -1,0 +1,191 @@
+1;"Dr.Peter";"László";"Budapest";"Angol u. 18-80";1251;2;1001
+2;"Augberg";"Helga";"Budapest";"Teréz u. 3.";1252;3;1001
+3;"Zonpák";"Csaba";"Budapest";"Madridi u. 6-8.";1253;2;1001
+4;"Garics";"Nándor";"Budapest";"Réva u. 4.";1254;4;1001
+5;"Magyar";"Sándorné";"Budapest";"Zöldvirág u. 188.";1255;2;1001
+6;"Dr.Komáromi";"Mihály";"Budapest";"Söveg u. 188.";1256;2;1001
+7;"Dr. Hull";"Zsuzsa";"Budapest";"Attila stny. 718.";1257;2;1001
+8;"Polgár";"Zsigmond";"Budapest";"Váci u. 7818.";1258;3;1001
+9;"Villányi-Nagy";"Tivadar";"Budapest";"Rumbach K. u. 18.";1259;2;1001
+10;"Szikora";"Oszvald";"Budapest";"Böszörmény allé 8.";1260;4;1001
+11;"Kolettin";"Zoltán";"Budapest";"Mester u. 18418.";1261;2;1001
+12;"Dr.Karner";"Erzsébet";"Budapest";"Üllôi út 95.";1262;2;1001
+13;"Günter";"Pál";"Budapest";"Szigony u. 180.";1263;4;1002
+14;"Dr.Rátkai";"László";"Budapest";"Falk M. u.7. fszt.83";1264;3;1002
+15;"Eibin";"Tibor";"Budapest";"Ganz u. 186.";1265;4;1002
+16;"Kalmár";"Oszkár";"Budapest";"Nádor u. 184.";1266;2;1002
+17;"Jármay";"Tibor";"Zalaegerszeg";"Remény u. 48.";8900;3;1002
+18;"Dr.Kemény";"László";"Budapest";"Csörsz u.3.";1268;2;1002
+19;"Tonács";"István";"Budapest";"Maros u. 189-818.";1269;3;1002
+20;"Porthafer";"Béla";"Budapest";"Diószegi út 60/A";1270;5;1002
+21;"Dr.Marton L.";"Zoltán";"Budapest";"Toldy F. u. 188.";1271;2;1003
+22;"Keri";"Lukács";"Budapest";"Petôfi S. u. 7.";1272;2;1003
+23;"Fodor";"Gézáné";"Zalaegerszeg";"Izabella u. 8.";8900;2;1003
+24;"Bolny";"Ferenc";"Budapest";"Kövér Lajos u. 56.";1274;3;1003
+25;"Ulsztin";"Gábor";"Budapest";"Váci út 80-86.";1275;3;1003
+26;"Dr. Bedõ";"József";"Budapest";"Kárpát u. 18/B";1276;3;1003
+27;"Balás";"János";"Budapest";"Üllôi út 18.";1277;4;1003
+28;"Dienes";"János";"Budapest";"Félhévizi u. 3-5.";1278;5;1003
+29;"Dr.Pável";"Mihály";"Budapest";"Semmelweiss u. 83.";1279;5;1003
+30;"Daróczi";"Nikolett";"Budapest";"Szabadság tér 1818.";1280;5;1003
+31;"Sarlós";"György";"Budapest";"Gizella u. 48-44.";1281;3;1003
+32;"Dr. Virányi";"Gyula";"Budapest";"Dob u. 49.";1282;3;1003
+33;"Thisalmann";"Lajos";"Budapest";"Rottenbiller u. 818.";1283;3;1003
+34;"Guny";"Gyula";"Budapest";"Fogarasy út 806.";1284;3;1003
+35;"Dr. Lupócz";"Tibor";"Budapest";"Jegenye fasor 185.";1285;2;1003
+36;"Dr.Márai";"Evelin";"Budapest";"Paulay E. u. 418.";1286;2;1003
+37;"Dr.Horváth";"Gábor";"Budapest";"Kiskorona u.80.";1287;2;1003
+38;"Magyar";"Tibor";"Budapest";"Rumbach S.u.6.";1288;2;1004
+39;"Kalmár";"Attila";"Budapest";"Szentendrei út 1889.";1289;2;1004
+40;"Barcs";"Mihályné";"Budapest";"Gránátos út 18-3.";1290;2;1004
+41;"Radamerkszk";"Lajos";"Budapest";"Nagydiófa u.5.";1291;2;1004
+42;"Schaffer";"Sándor";"Budapest";"Dunasor 1818.";1292;2;1004
+43;"Manfraun";"Tibor";"Budapest";"Báthori u.180.";1293;2;1004
+44;"Dr .Heszky";"Adrienn";"Budapest";"Szász Károly u.8.";1294;2;1004
+45;"Ecker";"Gábor";"Budapest";"Hess András tér 18-3.";1295;2;1004
+46;"Felföldi";"Kármen";"Budapest";"Margit krt.85.";1296;1;1004
+47;"Izsák";"János";"Budapest";"Apátczai Csere J.4.";1297;1;1004
+48;"Dr. Pepp";"Lajos";"Budapest";"Bosnyák u.7/b.";1298;1;1004
+49;"Bartos";"György";"Budapest";"Fiasgyúk u.4-8.";1299;2;1004
+50;"Rácz";"Arthur";"Budapest";"Roosevelt tér 5.";1251;2;1004
+51;"Lekornczk";"István";"Budapest";"Késmárk út 1807.";1252;3;1004
+52;"Dr. Kristóf";"Gyula";"Budapest";"Gyömrõ u.t 7";1253;4;1004
+53;"Dr. Szabó";"Szcetlana";"Budapest";"Puskin u.6.";1254;4;1004
+54;"Dr.Princ";"Adrienn";"Budapest";"Dió krt. 3.";1255;4;1004
+55;"Emhall";"Péter";"Budapest";"Csalogány u.183-189/a";1256;4;1004
+56;"Dr.Riba";"Rozália";"Budapest";"Nagykôrôsi út 1889.";1257;4;1005
+57;"Erik";"Balázs";"Budapest";"Szilágyi E. fasor 47";1258;3;1005
+58;"Váczi";"Márta";"Budapest";"Bosnyák tér 5a.";1259;3;1005
+59;"Albrecht";"Márk";"Budapest";"Szentháromság tér 6.";1260;2;1005
+60;"Gidófalvi";"Attila";"Budapest";"Ilosvai S. 64.";1261;3;1005
+61;"Dr.Oláh";"Gábor";"Budapest";"Fehérvár rkp. 87.";1262;3;1005
+62;"József";"László";"Budapest";"Villányi ôt 918.";1263;2;1005
+63;"Károlyi";"László";"Budapest";"Váci út 818-85.";1264;2;1005
+64;"Albermeister";"Péter";"Budapest";"Eötvös u. 188-185.";1265;2;1005
+65;"Brückerhalter";"Iván";"Budapest";"Róbert K. krt.618-65.";1266;2;1005
+66;"Torpán";"Zoltán";"Budapest";"Tó u. 18-5.";1267;2;1006
+67;"Bíró";"Ferenc";"Budapest";"Erzsébet tér 4.";1268;2;1006
+68;"Dr. Kovács";"Béla";"Budapest";"Mérnök u. 188.";1269;3;1006
+69;"Csorba";"Lászlóné";"Budapest";"Gergely u. 818.";1270;3;1006
+70;"Kollár";"József";"Budapest";"Haller u.76. II/8.";1271;4;1006
+71;"Nécsei";"Patsch Edit";"Budapest";"Borkõ u. 8.";1272;4;1006
+72;"Bihari";"Judit";"Budapest";"Mészáros u. 48-54.";1273;2;1006
+73;"Perecz";"Gábor";"Budapest";"Róbert K.krt. 76-78.";1274;2;1006
+74;"Matrak";"Péter";"Budapest";"Lánchíd u. 5.";1275;2;1006
+75;"Hegedüs";"Erika";"Budapest";"Bihari út 6.";1276;3;1006
+76;"Molnár";"Jean";"Budapest";"Ujpest rkp. 8.";1277;3;1006
+77;"Bogáthy";"Csaba";"Budapest";"Folyamôr u. 9-1818.";1278;4;1006
+78;"Dr. Nagy";"Sándor";"Budapest";"Margit krt. 43-45.";1279;4;1006
+79;"Gaschler";"László";"Budapest";"Adóház u. 50.";1280;2;1006
+80;"Bauerfield";"Mariann";"Budapest";"Borostyán u. 18/B";1281;6;1007
+81;"Czigány";"Erika";"Budapest";"Elnök u. 18.";1282;2;1007
+82;"Horváth";"György";"Budapest";"Pusztaszeri u. 59-67";1283;3;1007
+83;"Hajas";"Imre";"Budapest";"Fraknó út 188/a";1284;2;1007
+84;"Pirkos";"Andrea";"Budapest";"Gyepsor u. 18.";1285;4;1007
+85;"Zimonyi";"Józsefné";"Budapest";"Stadion lépcsõ 2.";1286;3;1007
+86;"Mortoi";"André";"Budapest";"Déli u. 1818.";1287;5;1007
+87;"Papp";"Tamás";"Budapest";"Soroksári u. 1864.";1288;2;1007
+88;"Sipos";"Péter";"Budapest";"Jászberényi ôt 86/c";1289;4;1007
+89;"Ulrich";"Balázs";"Budapest";"Keresztúri út 8180.";1290;2;1007
+90;"Kutiné Palotás";"Éva";"Budapest";"Hunyadi Mátyád u. 2.";1291;3;1007
+91;"Dr. Pinterfaller";"László";"Budapest";"Késmárk u. 86.";1292;1;1008
+92;"Leitermüller";"Géza";"Budapest";"Angol út 98.";1293;1;1008
+93;"Kos";"Ilona";"Budapest";"Háros u. 7.";1294;3;1008
+94;"Mustermann";"András";"Budapest";"Rákóczi út 18-3.";1295;1;1008
+95;"Dr.Szundos";"Emil";"Budapest";"Meredek u. 183.";1296;2;1008
+96;"Molnár";"Minault";"Budapest";"Könyvkötõ u. 188.";1297;3;1008
+97;"Dr. Radványi";"Zsuzsanna";"Budapest";"Csáktornya u. 5/B";1298;1;1008
+98;"Kalló";"Károly";"Budapest";"Irányi u. 187.";1299;2;1008
+99;"Simonyi";"Csaba";"Budapest";"Thököly út 1837.";1258;5;1008
+100;"Kovács";"Sándor";"Budapest";"Zay u. 84.";1259;3;1008
+101;"André";"András";"Budapest";"Báthory u. 188.";1260;4;1008
+102;"Horpácz";"Katalin";"Budapest";"Duna u. 48.";1261;1;1008
+103;"Rényi";"Márk";"Budapest";"November sor";1262;2;1008
+104;"Kosánszky";"Rórbert";"Budapest";"Bécsi út 4.";1263;1;1008
+105;"Vörös T.";"Katalin";"Budapest";"Telek u. 5.";1264;4;1008
+106;"Sziebert";"Ferenc";"Budapest";"Soroksári út 98.";1265;4;1008
+107;"Csapó";"Gerzson";"Budapest";"Kupola stny. 18.";1266;1;1008
+108;"Fábián";"Gábor";"Budapest";"Allomás u. 3.";1267;5;1009
+109;"Názár";"József";"Budapest";"Ladik út 18.";1268;1;1009
+110;"Birs";"Anna";"Budapest";"Szilágyi D.tér Alsó rkp.";1269;2;1009
+111;"Dr.Matók";"Bertalan";"Budapest";"Fogadó u. 4.";1270;2;1009
+112;"Oreszt";"Erzsébet";"Budapest";"Váci út 18-19.";1271;1;1009
+113;"Tajthy";"Gyula";"Budapest";"Bartók Béla út 1858.";1258;1;1009
+114;"Tóth";"Simon";"Budapest";"Budafoki út 95.";1259;2;1009
+115;"Dancs";"Kálmán";"Budapest";"Huszár u. 7.";1260;3;1009
+116;"Garzó";"László";"Budapest";"Akadémia u. 18-3.";1261;3;1009
+117;"Gattermayer";"János";"Budapest";"Ferenc u. 1837.";1262;2;1009
+118;"Oraveczszky";"Albert";"Budapest";"Peterdy u. 6.";1263;4;1009
+119;"Hamburger";"Péter";"Budapest";"Rákospatak u. 60/a";1264;3;1009
+120;"Dr. Koppány";"Antal";"Budapest";"Hermina út 187.";1265;2;1009
+121;"Josef";"József";"Budapest";"Dent u. 8-4.";1266;6;1010
+122;"Krisz";"Zsuzsa";"Budapest";"Széchenyi rkp. 3.";1267;3;1010
+123;"Szûcs";"József";"Budapest";"Amerikai út 183.";1268;3;1010
+124;"Dr.Pintér";"Elemér";"Budapest";"Nagymezô u. 44.";1269;1;1010
+125;"Dr. Menyhért";"András";"Budapest";"Szabadság tér 186.";1270;1;1010
+126;"Köchel";"Tamás";"Budapest";"Bartók Béla út 1858.";1271;6;1010
+127;"Zsákai";"Pálné";"Budapest";"Dávid Ferenc u. 6.";1274;6;1010
+128;"Szentesi";"György";"Budapest";"Lorenzi út 37.";1275;3;1010
+129;"Jürgen";"Dénes";"Budapest";"Hársfa u. 818.";1276;2;1010
+130;"Szokonya";"Béláné";"Budapest";"Kôbányai út 47/b";1277;4;1010
+131;"Korányi";"Tibor";"Budapest";"Vörösmarty tér 3.";1278;5;1010
+132;"Marcus";"György";"Budapest";"József A. u. 9.";1279;1;1010
+133;"Kristóf";"Márton";"Budapest";"Andrássy tér 1.";1280;2;1010
+134;"Szekrényessy";"Ottó";"Budapest";"Tóth. u. 7.";1281;1;1010
+135;"Turi-magas";"Zoltán";"Budapest";"Mérleg u. 4.";1282;1;1010
+136;"Regina";"András";"Budapest";"Károly krt. 84.";1283;5;1010
+137;"Vértes";"Gábor";"Budapest";"Apáczay Cs.J. u. 188-184.";1284;1;1010
+138;"Csizmadia";"László";"Budapest";"Zádor u. 4.";1285;2;1011
+139;"Haas";"János";"Budapest";"Bem rkp. 88.";1286;4;1011
+140;"Demeter";"Ágnes";"Budapest";"Hungária krt. 1840-1844.";1287;4;1011
+141;"Kovács";"Nándor";"Budapest";"Horváth M. tér 8.";1288;3;1011
+142;"Hidvégi";"Katalin";"Budapest";"Váci út 83-87.";1289;6;1011
+143;"Szentesi";"András";"Budapest";"Kôbányai út 818.";1290;2;1011
+144;"Munter";"László";"Budapest";"Szentkirályi út 88.";1291;2;1011
+145;"Kiss";"Márta";"Budapest";"Rákóczi út 18-3.";1292;5;1011
+146;"Dr.Bódis";"József";"Budapest";"Április u. 4.";1293;1;1011
+147;"Mohos";"Kálmán";"Budapest";"Széhet út 98.";1294;2;1011
+148;"Major";"Adrienne";"Budapest";"Asbóth u. 81.";1295;5;1011
+149;"Marika";"Klára";"Budapest";"Sopron út 40.";1296;2;1011
+150;"Koleszmár";"Ottó";"Budapest";"Kuny Domokos u. 183-185.";1297;3;1011
+151;"Takács";"Csaba";"Budapest";"Gyömröi út 618.";1298;2;1011
+152;"Németh";"Alberto";"Budapest";"Mártírok útja 845.";1299;2;1011
+153;"Báder";"Lajos";"Budapest";"Landler u. 44.";1258;5;1011
+154;"Maklári";"Lázár";"Budapest";"Hungária krt. 1848.";1259;3;1011
+155;"Firczinger";"László";"Budapest";"Gyömrôi út 188-818.";1260;1;1011
+156;"Schulek";"Viktória";"Budapest";"József nádor tér 5-6.";1261;2;1011
+157;"Gábor";"Eszmeralda";"Debrecen";"Bajcsy-Zsilinszky út 188.";4000;1;1011
+158;"Dr. Máté";"Pál";"Debrecen";"Bécsi út 99.";4000;5;1011
+159;"Fritz";"Beáta";"Budapest";"Apáczai u. 1.";1264;5;1011
+160;"Scheer";"István";"Budapest";"Szegedi ôt 48/e.";1265;2;1011
+161;"Franz";"László";"Debrecen";"Kehely u. 3.";4000;2;1011
+162;"Birkás";"László";"Budapest";"Huszti u. 38.";1274;3;1011
+163;"Lanhaber";"Zoltán";"Debrecen";"György kir. u. 2.";4000;3;1011
+164;"Nagy";"László";"Debrecen";"Gyarmat u. 86.";4000;3;1011
+165;"Dr. Csigó";"Csaba";"Budapest";"Révay u. 180.";1277;3;1011
+166;"Cziffra";"Gyula";"Budapest";"Aradi u. 8-180.";1278;3;1011
+167;"Dr.Lázár";"Pilas";"Debrecen";"Prímás u. 8.";4000;2;1011
+168;"Hajdú";"Ferenc";"Debrecen";"Thököly u. 1805.";4000;3;1011
+169;"Fekete";"Jordan";"Budapest";"Fiastyúk u. 4-8.";1281;2;1011
+170;"Avar";"Zoltán";"Debrecen";"Erzsébet tér 7-8.";4000;3;1011
+171;"Demeter";"Csilla";"Budapest";"Rákóczi út 118.";1283;2;1011
+172;"Dr.Szalay";"Eugen";"Budapest";"Rottenbiller u. 186.";1284;2;1012
+173;"Békési";"Szilvia";"Budapest";"Szônyi u. 418";1285;2;1012
+174;"Hansz";"Krisztina";"Budapest";"Fehérvári u. 180.";1286;2;1012
+175;"Varga";"Timea";"Budapest";"Kölcsey u. 8.";1287;2;1012
+176;"Lihotka";"Levente";"Budapest";"Dobsa u. 184.";1288;2;1012
+177;"Hausburger";"Jenõ";"Budapest";"Almár sor 7.";1289;3;1012
+178;"Tóth";"Márk";"Budapest";"Vihar u. 8.";1290;3;1012
+179;"Papula";"József";"Budapest";"Vérmezô u. 4.";1291;6;1012
+180;"Kékesi";"András";"Budapest";"József A. u. 18.";1292;4;1012
+181;"Berta";"Mária";"Budapest";"Kelenvölgy krt. 1.";1293;4;1012
+182;"Brathiller";"István";"Budapest";"Major u. 618.";1294;4;1012
+183;"Karaszi";"Imre";"Budapest";"Arany János u. 89.";1295;1;1012
+184;"Dr.Gergely";"Ferenc";"Budapest";"Hermelin út. 187.";1296;2;1012
+185;"Dr.Kovács";"Imre";"Budapest";"Kassák L. u. 97";1297;3;1012
+186;"Gold";"Zoltán";"Budapest";"Nagy Lajos kir. útja 18-19.";1298;2;1012
+187;"T. Dögei";"Pál";"Budapest";"Szurdok út 1850.";1299;2;1012
+188;"Schäffer";"János";"Budapest";"Akadémia u. 30.";1258;3;1012
+189;"Pecze";"Attila";"Budapest";"Rokolya u. 18-31.";1259;3;1012
+190;"Böszörményi";"Sámson";"Budapest";"Szerpentin út 98.";1260;3;1012
+191;"Fejes";"Beáta";"Budapest";"Krisztina krt. 55.";1261;3;1012

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1390983531 source:j:\11.i\tomb\hazi_2014\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<limits.h>
+	<cmath>
+

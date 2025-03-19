@@ -1,0 +1,296 @@
+
+                           ษอออออออออออออออออออออออออป
+                           บ File kezel้s Pascal-ban บ
+                           ศอออออออออออออออออออออออออผ
+
+  1. Pascalban ketfele filet kezelhetunk :
+        - Random filet       ( A file barmely rekordjat elerhetjuk barmikor. )
+        - Szekvencialis filet( Ahhoz hogy elerjuk egy rekordjat, az elotte
+                               levo osszes rekordot be kell olvasni.         )
+
+  2. Fileszerkezet meghatarozasa
+
+      Mielott egy filet hasznalnank valamire meg kell hatarozni a szerkezetet.
+      Ha van egy filenek szerkezete, akkor egy rekordjanak a tipusat meg kell
+      hatarozni. Ezt a TYPE (tipusdefinicio) szoval tehetjuk meg.
+
+      Szintaxisa :
+        Type tipus = Record
+              Mezo1: Tipus1 ;
+              Mezo2: Tipus2 ;
+              .
+              .
+             End;
+      A Tipus1, Tipus2, TipusX barmely tipusu lehet, akar rekord tipusu is.
+      Ilyenkor egymasba agyazott rekordrol beszelunk.
+
+      Egy pelda :
+         Type Tipusa = record 
+                Nev  : String[30] ;
+                SzSz : String[11] ;
+                Fiu  : Logical    ;
+               end;
+
+       Most csinaltunk egy tipusa nevu tipust, amely a file rekordjainak ti-
+        pusa.
+       Ha olyan tipusu rekordot akarunk csinalni amelynek egyes mezoi csak
+        akkor ervenyesek ha egy bizonyos mezo erteke egyenlo valamivel vagy
+        mondjuk igaz. Ekkor valtozo hosszusagu rekordrol beszelunk.
+
+       Ennek a Szintaxisa :
+
+        Type tipus = Record
+              Mezo1: Tipus1 ;
+              Mezo2: Tipus2 ;
+              Case MezoL : Tipus3 of
+                 Ertek1 : ( Mezo3 : Tipus4 );
+                 Ertek2 : ( Mezo4 : Tipus5 );
+              End;
+             Mezo5: Tipus3 ;
+              .
+              .
+             End;
+
+       Ebben az esetben a MezoL erteketol fugg az, hogy  Mezo3 vagy Mezo4
+        mezo fog szerepelni a recordban.
+       A Tipus3 barmely tipusu lehet (Byte,String,Sajat tipus).
+
+    
+
+  3. A File deklaralasa, Rekord deklaralasa
+
+      Miutan a rekord tipusat meghataroztuk, az ilyen tipusu file nevet dek-
+       laralni kell.
+
+       Var Filenev : file of Tipus ;
+
+      A filenev nem a fizikai nev (a lemezen szereplo nev), hanem a program-
+       ban egy hivatkozasi nev.
+       A tipus lehet rekord tipus, amit elozoleg deklaraltunk, de lehet bar-
+       milyen tipus is. (Byte,String,Integer...stb.)
+
+      Ahhoz hogy egy rekordot el tudjuk erni, egy valtozo is szukseges.
+
+       Var Rekord : Tipus ;
+
+       A tipus barmilyen lehet, Rekord,Byte...stb.
+
+  4. File osszerendeles, megnyitasok, lezaras
+
+      Mielott a file-al barmilyen muveletet vegeznenk, elotte minden esetben
+       ossze kell rendelnunk a fizikai nevet a hivatkozasi nevvel.
+
+       Erre szolgal az ASSIGN(deklaralt nev,'Eleresi ut+filenev')
+       A programon belul a filera mindig a hivatkozasi(deklaralt) nevvel kell
+       hivatkozni.
+
+       Pelda :
+        Type Tipusa = Record
+              Nev   : String[40];
+              SzSz  : Stirng[11];
+             End;
+        ...
+        Var Falyl : file of Tipusa;
+            Rec   : Tipusa ;
+        ...
+        Assign(Falyl,'B:\PROBA\PROBA.DTA');
+
+        Az osszerendeles utan megnyithatjuk a filet.
+        A megnyitas ketfele lehet :
+          - Mar letezo file megnyitasa
+
+             Reset ( Filenev{deklaralt nev} )
+
+          - Meg nem letezo, vagy a letezo uresre valo megnyitasa
+
+             ReWrite ( Filenev )
+
+        Ennel a peldanal maradva tehat :
+         Reset(Falyl);    ill.   ReWrite(Falyl);
+
+        A muveletek elvegzese utan a filet le kell zarni !!!
+        Erre szolgal :
+         Close ( Filenev );
+
+        Pelda :
+         .
+         Close(Falyl);
+         .
+   
+
+  5. Filemutato, mozgatasa, lekerdezese
+
+       A fileben iras es olvasas oda ill. onnan tortenik ahol a filemutato
+        all. A file megnyitasakor a filemutato a 0. rekordon all es minden
+        irasi,olvasasi muvelet leptet egyet a filemutaton.
+        (A nulladik sorszamu rekord tulajdonkeppen az elso.)
+
+       A filemutato aktualis poziciojat lekerdezhetjuk egy fuggvennyel :
+       (Minden ilyen fuggvenynel meg kell adnunk a zarojelen belul azt,
+        hogy melyik filera vonatkozik.)
+
+        FilePos()  Ez egy Integer erteket ad vissza, amely azt mutatja,me-
+                    lyik lesz az a rekord, amelyen a legkozelebbi muvelet
+                    vegrehajtodik. (Ha az elso rekord, akkor erteke 0.)
+
+        LongFilePos()  Ezt a fuggvenyt akkor hasznaljuk, ha a fileben tobb
+                       rekord van mint 32767 db. Hatasa ugyanaz, mint a
+                       FilePos()-e, csak LongInt tipusu szamot ad vissza.
+                       Ha tehat tobb rekord van benne mint 32767, akkor a
+                       Long+... kell hasznalnunk.
+
+        Pelda:
+         .
+         Reset(Falyl);
+         Write(FilePos(Falyl));
+         .
+         Hatasa : 0 fog kiirni.
+
+        Ha tudni akarjuk, hogy mennyi rekord van a fileban, akkor
+
+         FileSize() ill. LongFileSize() egy olyan egesz szamot ad vissza
+           amely azt mutatja, hogy melyik az elso szabad ures hely, mivel
+           nullatol kezdi sorszamozni igy ez a fileban szereplo osszes
+           rekord szamat adja vissza.
+
+        Ha filemutatot mozgatni szeretnenk, akkor
+
+         Seek(filenev,pozicio) ez a megadott fileban a filemutatot a pozi-
+          ciora allitja.
+
+        Azt is megvizsgalhatjuk hogy a filemutato a file vegen all-e :
+
+         Eof(Filenev) Logikai fuggveny, erteke igaz, ha a filemutatot a
+          vegen all.
+
+        Pelda :
+         ...
+         Reset(Falyl);
+         Seek(Falyl,FileSize(Falyl));
+         Write(Eof(Falyl));
+         ...
+         Hatasa :
+          True irja ki a kepernyore.
+    
+
+  6. Rekord beolvasasa, kiirasa, With  utasitas, Rekord mezojenek ertekadas
+
+       A Fileba rekordot az aktualis filepoziciotol olvashatjuk be :
+
+        Read ( Filenev , Rekord_tipusu_valtozo );
+
+       Irasnal ugyanez a helyzet :
+
+        Write ( Filenev , Rekord_tipusu_valtozo );
+
+       Pelda :
+        ...
+        Reset(Falyl);
+        Write(Falyl,rec);
+        Seek(Falyl,0);
+        Read(Falyl,rec);
+        ...
+
+       A rekord mezoinek erteket a hagyomanyos modon adhatunk,de meg kell
+       adni, hogy mely rekord mezojere hivatkozunk. (Minositett adatnev.)
+       Rekord_tipusu_valtozo.mezo1:= Ertek ;
+
+       Ha nem akarjuk minden ertekadasnal a rekord tipusu valtozo nevet
+       megadni, akkor hasznaljuk  a WITH utasitast, ami arra szolgal, hogy
+       minden utasitas a megadott rekordvaltozo mezoire vonatkozzon.
+
+         With Rekord_tipusu_valtozo do
+          Begin
+           Mezo1:=Ertek1;
+           Mezo2:=Ertek2;
+          End;
+
+       Ha egymasba agyazott rekord tipus van, akkor a Rekord_tipusu_valtozo
+       helyere tobb nevet kell irni, vesszovel elvalasztva. (Vagy egy ujabb
+       WITH-et adunk meg.)
+
+  7. File torlese, atnevezese, puffer kiuritese, file csonkolasa
+
+        Csak lezart filet nevezhetunk at, vagy torolhetunk le.
+
+         Erase(filenev)  Mar osszerendelt nevu filet torol a lemezrol.
+
+         Rename(filenev,'Uj nev') Mar osszerendelt filet nevez at 'Uj nev'
+                                   nevure.
+
+        A fileba torteno irasok es olvasasok nem kozvetlenul a lemezre
+         tortennek, hanem a memoriaba,egy atmeneti taroloba, egy un. pufferbe.
+         Ha ez a puffertar megtelik, akkor elvegzi a lemezen is a muveletet.
+
+         A Flush kiuriti a puffert,vagyis elvegzi a muveleteket a lemezen.
+
+        A filet csonkolhatjuk is.
+         A Truncate(filenev) eljaras az aktualis filemutato allastol tor-
+         li az osszes rekordot a filebol.
+
+     
+      
+
+
+  8. Hibakezeles
+
+     Ha a hibakat mi magunk akarjuk lekezelni, akkor fordito direktivakat
+      kell hasznalni. A filekezelesnel ez a I - direktiva.
+      {$I-}  A hibaellenorzest kikapcsolja (semmilyen I/O hibanal nem all le
+              a program.)
+      {$I+}  Bekapcsolja a hibaellenorzest
+
+      Barmely hiba eseten a IOResult fuggveny erteke valtozik (nem nulla)
+
+      Pelda :
+       .
+       .{Nem letezik a Falyllal osszerendelt file )
+       {$I-}
+       Reset(Falyl);
+       {$I+}
+       Write(IOResult);
+       .
+       .
+       Hatasa :  Kiir egy szamot a kepernyore.
+
+  9. Text fileok
+
+       A text file tipikus peldaja a szekvencialis filenak, ugyanis nem
+        tudjuk, hogy milyen hosszu egy rekord. Itt ugyanis egy rekord egy
+        sornak felel meg. Minden sor veget egy un. sorvege jel jelez, a
+        file veget pedig egy filevege jel. A sorvege jelnek felel meg pel-
+        daul az <ENTER> is ha szoveget tarolunk az allomanyban.
+
+        Egy sima forras program file is egy text file.
+
+        Text file kezelese nagyon hasonlit a rendes randomfile kezeleshez,
+        csak itt nemcsak egy fix rekordot olvashatunk be, hanem akar mas
+        szerkezetu rekordot is.
+
+
+       A nyomtato is egy specialis text file. Ugyanugy hasznalhatjuk mint a
+        tobbi textfilet ill. filet.
+
+        Celszeru meghivni a Printer Unitot.
+
+        Pelda :
+         Uses Printer;
+         .
+         .
+         Write(Lst,'Szoveg');
+         .
+         Hatasa : kiirja a nyomtatora : Szoveg
+
+         A nyomtato file neve tehat Lst.
+
+         A nyomtatra iraskor van kulonbseg a Write es a WriteLn kozott.
+          A WriteLn ugyanis sort is emel a kiirt szoveg utan.
+
+         A nyomtatonak vannak vezerlo karakterei ilyen a lapdobas is :
+
+          Write(Lst,#12);
+
+                   Ennyi volt. . .
+
+
+       

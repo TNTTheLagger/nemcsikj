@@ -1,0 +1,4 @@
+"Görögország";1
+"Törökország";2
+"Marokkó";3
+"Szlovénia";4

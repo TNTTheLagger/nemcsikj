@@ -1,0 +1,36 @@
+Program Just;
+Uses Crt, Graph;
+Var Gd, Gm : Integer;
+    S : String;
+BEGIN
+     DetectGraph(Gd,Gm);
+     InitGraph(Gd,Gm,'');
+     Line(4,14,634,14);
+     Line(4,14,4,449);
+     Line(4,449,634,449);
+     Line(634,449,634,14);
+     Line(4,164,634,164);
+     Line(4,314,634,314);
+     Line(214,14,214,449);
+     Line(424,14,424,449);
+     S := 'Hello!';
+     SetTextJustify(0,2);
+     OutTextXY(9,19,S);
+     SetTextJustify(1,2);
+     OutTextXY(324,19,S);
+     SetTextJustify(2,2);
+     OutTextXY(629,19,S);
+     SetTextJustify(0,1);
+     OutTextXY(9,239,S);
+     SetTextJustify(1,1);
+     OutTextXY(324,239,S);
+     SetTextJustify(2,1);
+     OutTextXY(629,239,S);
+     SetTextJustify(0,0);
+     OutTextXY(9,444,S);
+     SetTextJustify(1,0);
+     OutTextXY(324,444,S);
+     SetTextJustify(2,0);
+     OutTextXY(629,444,S);
+     ReadKey;
+END.

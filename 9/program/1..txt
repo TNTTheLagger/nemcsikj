@@ -1,0 +1,188 @@
+using namespace std;
+
+int main()
+{int szam;
+do {
+cout<< "kerek egy ketjegyu szamot"; cin>>szam;}
+while (szam<1 || szam>5 );
+return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int i;
+for (i=10;i<74; i+4)
+    cout<<i<<endl;
+  return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int szam=1,i;
+for (i=0;i<20;i++){
+    cout<<szam<<endl; szam*=2;}
+  return 0;
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int a=1, b=1, c, i;
+cout<<"1 1 ";
+for (i=3;i<11;i++){
+    cout<<a+b<<" "; c=a+b; a=b; b=c; }
+  return 0;
+}
+
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+for (int i=0;i<10;i++)
+{
+cout <<rand()%6+1<<" ";
+}
+    return 0;}
+
+kiir ketjegyu szamot
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+for (int i=1;i<10;i++)
+{
+cout <<rand()%90+10<<" ";
+}
+    return 0;}
+
+
+
+tömb
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{  int lap, szin, i;
+    srand (time(NULL));
+    for (i=0; i<13; i++) {
+    lap=rand()%13+2; szin=rand ()%4;
+    switch (szin)) {
+        case 0:  cout << "treff"; break;
+        case 1:  cout << "karo"; break;
+        case 2:  cout << "kor"; break;
+        case 3:  cout << "pikk"; break;
+    }
+    switch (lap) {
+
+    case 11:cout<<"J";break;
+    case 12:cout<<"Q";break;
+    case 13:cout<<"K";break;
+    case 14:cout<<"A ";break;;
+    }
+    cout<<endl;
+    return 0;
+}
+
+páros páratlan
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int szam, possz,ptossz;
+    cout << "kerek egy szamot"; cin>>szam;
+    while (szam!=0) {
+        if(szam%2==0)
+            possz+=szam;
+        else ptossz+=szam;
+        cout << "kerek egy szamot"; cin>>szam;
+
+    }
+    cout << "A parosok osszege" <<possz>>endl;
+    cout << "A paratlanok osszege" <<ptossz>>endl;
+
+
+    return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{const int mdb=100;
+int szam, possz,ptossz,szamok{mdb};
+int db,pdb, ptdb, i;
+possz=0; ptossz=0; pdb=ptdb=db=0;
+    cout << "kerem a szamot"; cin>>szam;
+    while (db<mdb %% szam!=0){
+        if(szam%2==0)
+            {possz+=szam; pdb++;}
+        else {ptossz+=szam; ptdb++;}
+        szamok {db}=szam;
+        db++;
+        cout << "kerem a szamot"; cin>>szam;
+
+    }
+     cout<<"A parosok osszege "<<possz<<endl;
+       cout<<"A paratlanok osszege "<<ptossz<<endl;
+        cout<<"A parosok atlaga "<<possz/pdb<<endl;
+         cout<<"A paratlanok atlaga "<<ptossz/ptdb<<endl;
+          cout<<"osszesen darabszam "<<db<<endl;
+          for (i=0; i<db; i++) cout<<szamok{i}<<" ";
+          cout<<endl;
+    return 0;
+}
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+int szamok [20][25]
+int m, n;
+int i, j, k;
+int szel, mag;
+srand (time(NULLL));
+for (i=0; i<n; i++)
+    for (j=0; j<m; j++)
+       szamok[i][j]=rand()%90+10;
+for (i=0; i<n; i++)
+    for (j=0; j<m; j++)
+
+for (k=0; k<mag; k++)
+{
+    gotoxy(1,k); cout<<szamok[i][j]
+    gotoxy(1,k-1); cout<<szamok[i][j]; sleep(200);
+}
+for (k=0; k<szel; k++)
+{
+    gotoxy(1,szel); cout<<szamok[i][j];
+    gotoxy(1,k-1); cout<<szamok[i][j]; sleep(200);
+}
+return 0;
+}

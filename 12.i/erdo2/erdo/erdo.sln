@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "erdo", "erdo\erdo.csproj", "{AA9B5604-9396-43D1-A2E2-E21A0273DD6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA9B5604-9396-43D1-A2E2-E21A0273DD6D}.Debug|x86.ActiveCfg = Debug|x86
+		{AA9B5604-9396-43D1-A2E2-E21A0273DD6D}.Debug|x86.Build.0 = Debug|x86
+		{AA9B5604-9396-43D1-A2E2-E21A0273DD6D}.Release|x86.ActiveCfg = Release|x86
+		{AA9B5604-9396-43D1-A2E2-E21A0273DD6D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

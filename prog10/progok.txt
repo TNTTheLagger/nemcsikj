@@ -1,0 +1,15 @@
+# Feltételes elágazás
+a=int(input('Add meg az első számot: '))
+print('Az a szam: ',a)
+b=int(input('Add meg a második számot: '))
+print('A b szam: ',b)
+c=int(input('Add meg a harmadik számot: '))
+print('A c szam: ',c)
+if a>c:
+    d=c
+    c=a
+    a=d
+if a*a+b*b == c*c:
+    print('Pitagoraszi számhármasok')
+else:
+    print('Nem pitagoraszi számhármas')

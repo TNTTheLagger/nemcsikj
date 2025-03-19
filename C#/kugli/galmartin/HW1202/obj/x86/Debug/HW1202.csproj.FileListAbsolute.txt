@@ -1,0 +1,8 @@
+G:\prog\2014-15\c#\HW1202\HW1202\bin\Debug\HW1202.exe
+G:\prog\2014-15\c#\HW1202\HW1202\bin\Debug\HW1202.pdb
+G:\prog\2014-15\c#\HW1202\HW1202\obj\x86\Debug\HW1202.exe
+G:\prog\2014-15\c#\HW1202\HW1202\obj\x86\Debug\HW1202.pdb
+C:\Users\nemcsikj\Documents\HW1202\HW1202\obj\x86\Debug\HW1202.exe
+C:\Users\nemcsikj\Documents\HW1202\HW1202\obj\x86\Debug\HW1202.pdb
+C:\Users\nemcsikj\Documents\HW1202\HW1202\bin\Debug\HW1202.exe
+C:\Users\nemcsikj\Documents\HW1202\HW1202\bin\Debug\HW1202.pdb

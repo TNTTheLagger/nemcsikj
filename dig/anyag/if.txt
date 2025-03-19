@@ -1,0 +1,17 @@
+# elágazások
+i=3
+v_nev=input("Add meg a vezetékneved: ")
+k_nev=input("Add meg a keresztneved: ")
+nev=v_nev+" "+k_nev
+print('Üdvözöllek',v_nev,k_nev,'!')
+idei_ev = 2024
+felhasznalo_kora = int(input('Hány éves vagy?'))
+print('Te most', felhasznalo_kora, 'éves vagy.')
+szul_datum=idei_ev-felhasznalo_kora
+print('Te az ',szul_datum, ' évben születtél')
+if felhasznalo_kora <= 18 :
+    print("Te gyerek vagy")
+elif felhasznalo_kora > 65 :
+    print("Nyugdíjas vagy")
+else:
+    print("Te aktív korú vagy")

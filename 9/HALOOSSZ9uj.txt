@@ -1,0 +1,110 @@
+
+
+               Hálózatelméleti alapfogalmak - tesztkérdések
+                    9. évfolyam részére
+
+    A kérdésekre a válasz igaz vagy hamis! Az eredményt a tesztlapra ird!
+    A kérdésnek megfelelö kockába a válasz:   1 ha a kijelentés IGAZ
+                                              2 ha a kijelentés HAMIS
+
+    1. A POP3 protokoll üzenetek fogadását valósítja meg.
+
+    2. A LAN egyik fö jellemzöje, hogy  az adatok továbbitására
+       kábeleret használnak.
+
+    3. A SIN topológia hátránya, hogy kevés kábelezést igényel.
+
+    4. A repeater nem erõsít jelet.
+
+    5. A FA topológia hátránya, hogy nehezen bövithetö új állomásokkal.
+
+    6. A CSILLAG topológia elönye, hogy a hibaszûrés gyors.
+
+    7. Az FTP nem protolol..
+
+    8. A FA topológia nagyon bizonytalan, mivel az összekötö elemek
+       meglazulásával a hálózat egy része széteshet.
+
+    9. A CSMA-t másnéven determinisztikus protokollnak is nevezik.
+
+    10. A HTTP fájlok fel és letöltéért megvalósitó protokol.
+
+    11. A CSMA protokollt föleg egyenletes teljesitményt igénylö hálózati
+        alkalmazásoknál használják.
+
+    12. Az adási jog továbbitásos protokoll hatékonyságát nem lehet un.
+        pozitiv nyugtázásos módszerrel javitani
+
+    13. A koaxiális kábel nem árnyékolt, ezért viszonylag jól szûri a
+        külsö mágneses zavarokat.
+
+    14. Az optikai kábel átbocsájtóképessége nagyon jó, 2-4 Mbit/sec.
+
+    15. A HUB kábelkoncentrátor a FA topológia hatékonyságát növeli
+        a legjobban.
+
+    16. A passziv HUB jelerösitést nem végez a hálózatban.
+
+    17. Az aktiv HUB nem multiplikálható, azaz csak munkaállomások
+        köthetök rá.
+
+    18. A hálózati csatolóegység olyan hálózati hardver elem, amely
+        kapcsolatot teremt a USER-ben a processzor és az interfésze
+        között.
+
+    19. Hálózati csatolóegység olyan kártya, amely csak a USER-ekben
+        található, a szerverben nincs.
+
+    20. A WAN hálozat legelterjedtebb változata az Intranet.
+
+    21. A hub olyan hálózati hardver elem, amely a távoli munka-
+        állomásokkal valo kapcsolattartásra használják.
+
+    22. A kapcsoló (switch) hálózati elemet csillag fõleg topológiában 
+        használjuk, de nem tartalmaz jelerõsítést.
+
+    23. A server kliens halózatoknál ki van jelölve egy központi gép és
+        az vezérli a munkaállomásokat.
+
+   24. A CSMA protokoll elöbb figyeli a hálózatot, s ha az szabad, akkor
+       kezdi el a forgalmazást.
+
+    25. Az adási jog továbbitásos protokollnál a forgalmazni kivánó csak
+        akkor adhat, ha a tokent megkapja.
+
+    26. A gateway különbözõ típusú hálózatokat köt össze.
+
+    27. A kapcsoló (switch) nem erõsít jelet.
+
+    28. A koaxiális kábel árnyékolt, ezért viszonylag jól szûri a
+        külsö mágneses zavarokat.
+
+    29. Az optikai kábel átbocsájtóképessége nagyon jó, ezért jelerösi-
+        tésre nincs is szükség nagy távolságoknál sem.
+
+    30. A IP protokoll a cimzésért felel az interneten.
+
+    31. A LAN egyik fö jellemzöje, hogy  az adatok továbbitására
+       telefonvonalat használnak.
+
+    32. A hálózati csatolóegység a gép interfésze és a kábel közötti
+        kapcsolatért felel.
+    33. A passziv HUB 400-600 m-re is összekapcsolja a hálózatot.
+
+    34. Az aktiv HUB multiplikálható.
+
+    35. A CSILLAG topológia hátránya, hogy kevés kábelezést igényel.
+
+    36. A SIN topológia a káros reflexiok miatt lezáróelemeket használ.
+
+    37. Az IP 5 bájtból álló cím.
+
+    38. Az TCP/IP az Internet egyik meghatározó protokollja.
+
+    39. Az UTP nem kábelben sodrott érpár.
+
+    40. Az UTP CAT 5 100 Mb/s átvitelt is megvalósíthat.
+
+  41. Irjd le a lap másik oldalára a megadott feladatokat!
+     Jó munkát!
+

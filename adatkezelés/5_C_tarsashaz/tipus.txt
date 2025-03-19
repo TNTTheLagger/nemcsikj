@@ -1,0 +1,21 @@
+﻿tipuskod;megnevezes
+1;Közös költség befizetés
+2;Vízdíj
+3;Szemétszállítás
+4;Áramdíj
+5;Banki költség
+6;Banki kamat
+7;Banki felvét
+8;Karbantartás
+9;Takarítás
+10;Kis értékű beszerzés
+11;Garázs áramdíj
+12;Takarítás díja
+13;Vízdíj tartozás
+14;Vízóra terveztetés
+15;Nincs egyéb követelés
+16;Házbiztosítás
+17;Kéményseprés
+18;Postai csekk
+19;Ügyvédi díj
+20;Nyitóegyenleg

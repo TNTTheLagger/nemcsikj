@@ -1,0 +1,83 @@
+program tipusfajl;
+uses crt;
+type rektip=record
+     autonev:string[20];
+     autokm:word;
+end;
+var i:integer;
+var egyed:rektip;
+var f,g:file of rektip;
+
+
+
+
+procedure adatbevitel;
+begin
+assign(f,'auto.dat');
+rewrite(f);
+for i:=1 to 3 do begin
+ writeln('Add meg az auto nevet: ');
+ readln(egyed.autonev);
+ writeln('Add meg a max Km-et: ');
+ readln(egyed.autokm);
+ write(f,egyed);
+end;
+end;
+
+procedure listazas;
+Begin
+{listázás}
+close(f);
+{$I-}
+  reset(f);
+{$I+}
+if IOresult<>0 then Halt;
+While not eof(f) do
+begin
+  read(f,egyed);
+  Writeln('Az auto neve: ',egyed.autonev,'Max km: ',egyed.autokm);
+end;
+
+end; 
+
+
+procedure torles;
+Begin
+reset(f);
+assign(g,'atorles.dat');
+rewrite(g);
+a:=1;
+seek(f,a);
+while not eof(f) do
+begin
+  seek(f,a+1)
+end;
+
+end;
+
+procedure MENU;
+var q:char;
+begin
+  repeat
+    ClrScr;
+    gotoxy(7,7);Writeln('Autónyilvántartó program');
+  gotoxy(7,9);Writeln('Készitette: nja program');
+    WriteLn('1 - Adatbevitel');
+    WriteLn('2 - List z s');
+    writeln('4 Törlés');
+    WriteLn('V - V‚ge');
+      q:=ReadKey;
+      case q of
+        '1':ADATBEVITEL;
+        '2':LISTAZAS;
+        '4':TORLES;
+      end;
+    until Upcase(q)='V';
+  ClrScr;
+end;
+
+begin
+clrscr;
+menu;
+readkey;
+end.

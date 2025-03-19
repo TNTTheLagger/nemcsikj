@@ -1,0 +1,10 @@
+E:\Nemcsik\hm34\bin\Debug\hm34.exe
+E:\Nemcsik\hm34\bin\Debug\hm34.pdb
+E:\Nemcsik\hm34\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Nemcsik\hm34\obj\x86\Debug\hm34.exe
+E:\Nemcsik\hm34\obj\x86\Debug\hm34.pdb
+G:\PROG\hm34\bin\Debug\hm34.exe
+G:\PROG\hm34\bin\Debug\hm34.pdb
+G:\PROG\hm34\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\PROG\hm34\obj\x86\Debug\hm34.exe
+G:\PROG\hm34\obj\x86\Debug\hm34.pdb

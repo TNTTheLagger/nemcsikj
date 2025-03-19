@@ -1,0 +1,105 @@
+
+
+               H l¢zatelm‚leti alapfogalmak - tesztk‚rd‚sek
+                    12. évf‚ r‚sz‚re
+
+    A k‚rd‚sekre a v lasz igaz vagy hamis! Az eredm‚nyt a tesztlapra ird!
+    A k‚rd‚snek megfelel” kock ba a v lasz:   1 ha a kijelent‚s IGAZ
+                                              2 ha a kijelent‚s HAMIS
+
+    1. A LAN orsz gokat ‚s f”ldr‚szeket ”sszek”t” h l¢zatot jelent.
+
+    2. A WAN egyik f” jellemz”je, hogy  az adatok tov bbit s ra
+       k beleret haszn lnak.
+
+    3. A CSILLAG topol¢gia h tr nya, hogy kev‚s k belez‚st ig‚nyel.
+
+    4. A SIN topol¢gia a k ros reflexiok miatt lez r¢elemeket haszn l.
+
+    5. A FA topol¢gia h tr nya, hogy nehezen b”vithet” £j  llom sokkal.
+
+    6. Az OSI fizikai rétege a bitenkenti atvitelt vezerli.
+
+    7. A SIN topol¢gi n l sorosan kapcsol¢dnak a sz mit¢g‚pek.
+
+    8. A FA topol¢gia nagyon bizonytalan, mivel az ”sszek”t” elemek
+       meglazul s val a h l¢zat egy r‚sze sz‚teshet.
+
+    9. A CSMA-t m sn‚ven determinisztikus protokollnak is nevezik.
+
+    10. A peer to peer szerver-kliens hálózatot jelent.
+
+    11. A passziv HUB nem jelismetlo.
+
+    12. Az ad si jog tov bbit sos protokoll hat‚konys g t nem lehet un.
+        pozitiv nyugt z sos m¢dszerrel javitani
+
+    13. A koaxi lis k bel nem  rny‚kolt, ez‚rt viszonylag j¢l szri a
+        kls” m gneses zavarokat.
+
+    14. Az optikai k bel  tbocs jt¢k‚pess‚ge nagyon j¢, 2-4 Mbit/sec.
+
+    15. A switch k belkoncentr tor a csillag topol¢gia hat‚konys g t n”veli
+        a legjobban.
+
+    16. A Gateway kulonbozo halozati oprendszereket kot ossze.
+    17. Az aktiv HUB nem multiplik lhat¢, azaz csak munka llom sok
+        k”thet”k r .
+
+    18. A switch jelerõsítést is megvalósít.
+
+    19. H l¢zati csatol¢egys‚g olyan k rtya, amely csak a USER-ekben
+        tal lhat¢, a szerverben nincs.
+
+    20. A WAN h lozat legelterjedtebb szoftvere a Novell NetWare.
+
+    21. A modem olyan h l¢zati hardver elem, amely a t voli munka-
+         llom sokkal valo kapcsolattart sra haszn lj k.
+
+    22. A repeater nem erõsíti a jeleket..
+
+    23. A hid különbözõ topologiákat köt össze.
+
+   24. A CSMA protokoll el”bb figyeli a h l¢zatot, s ha az szabad, akkor
+       kezdi el a forgalmaz st.
+
+    25. A szerver a kituntetett gép.
+    26. A CSMA protokollt f”leg v ltoz¢ teljesitm‚ny h l¢zati
+        alkalmaz sokn l haszn lj k.
+
+    27. A globalis halozat kevés kábelt igényel..
+
+    28. A koaxi lis k bel  rny‚kolt, ez‚rt viszonylag j¢l szri a
+        kls” m gneses zavarokat.
+
+    29. Az optikai k bel  tbocs jt¢k‚pess‚ge nagyon j¢, ez‚rt jeler”si-
+        t‚sre nincs is szks‚g nagy t vols gokn l sem.
+
+    30. A MAN orsz gokat ‚s f”ldr‚szeket ”sszek”t” h l¢zatot jelent.
+
+    31. A WAN egyik f” jellemz”je, hogy  az adatok tov bbit s ra
+       telefonvonalat haszn lnak.
+
+    32. A HUB k belkoncentr tor a CSILLAG topol¢gia hat‚konys g t n”veli
+        a legjobban.
+
+    33. Az UTP egy protokollt jelent.
+    34. Az aktiv HUB multiplik lhat¢.
+
+    35. A CSILLAG topol¢gia h tr nya, hogy kev‚s k belez‚st ig‚nyel.
+
+    36. A SIN topol¢gia a k ros reflexiok miatt lez r¢elemeket haszn l.
+
+    37. A CSILLAG topol¢gia h tr nya, hogy nehezen b”vithet” £j  llo-
+       m sokkal a sok befut¢ k bel miatt a k”zponti g‚pn‚l.
+
+    38. A SIN topol¢gia el”nye, hogy a hibaszr‚s gyors.
+
+    39. A FA topol¢gi n l p rhuzamosan kapcsol¢dnak a sz mit¢g‚pek.
+
+    40. A GYšRš topol¢gia nagyon bizonytalan, ez‚rt m s topol¢gi kkal
+       haszn lj k kevert elrendez‚sben.
+
+  41. Irjd le a lap m sik oldal ra a helyi hálozat definicioj t!
+     J¢ munk t!
+

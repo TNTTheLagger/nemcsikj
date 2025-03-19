@@ -1,0 +1,70 @@
+A feladatban szereplõ adatbázis emberek közötti ismeretségeket nyilvántartó, kapcsolatépítõ
+weblap adat tárolási rendszerének egyszerûsített modellje. Tároljuk benne a regisztrált
+felhasználók alapadatait, egymással való ismeretségi viszonyukat, valamint bizonyos, a
+rendszerben szereplõ emberek által definiálható csoportokat illetve azokhoz való tartozásukat.
+Az adatbázisban a kapcsolatok felvétele oly módon zajlik, hogy egy már regisztrált
+felhasználó ismerõsének jelöl egy másik szintén regisztrált felhasználót, majd az, a
+kapcsolatot visszaigazolja. Ezek után kerül a kapcsolat az adatbázis általunk ismert részébe.
+A regisztráció, jelölés, visszaigazolás folyamatának ábrázolása nem szerepel a feladat
+adatbázisában.
+Az adatbázis elsõsorban feladatkitûzési céllal készült, így természetesen nem modellezi
+tökéletesen a való életben felmerülõ hasonló rendszerekkel kapcsolatos összes lehetséges
+helyzetet. A feladatokat az adott modell keretein belül kell megoldani.
+A feladathoz mellékeljük a feltöltött minta adatbázist több formátumban az alábbi fájlokban:
+ismeros.mdb, ember.txt, csoport.txt, csoptag.txt, ismer.txt .
+Az adatbázis az alábbi táblákat (relációkat) tartalmazza:
+(A „:” után az adott adat típusát adtuk meg, a „->” karakterek után pedig az esetlegesen
+meghatározott kapcsolatot. Az egyes tábláknál a kulcsot aláhúzott karakterekkel jelöljük.)
+EMBER (
+EAZON : Egész szám -> CSOPORT.LETREHOZO
+-> CSOPTAG.TAG
+-> ISMER.EMBER1
+-> ISMER.EMBER2
+VNEV : Szöveg
+KNEV : Szöveg
+SZULDAT : Dátum
+NEM : Szöveg
+)
+CSOPORT (
+CSAZON : Egész szám
+CSNEV : Szöveg
+LETREHOZO : Egész szám -> EMBER.EAZON
+)
+
+Informatikai alapismeretek — emelt szint Azonosító
+jel:
+CSOPTAG(
+CSTAZON : Egész szám
+CSOPORT : Egész szám -> CSOPORT.CSAZON
+TAG : Egész szám -> EMBER.EAZON
+)
+ISMER (
+IAZON : Egész szám
+EMBER1 : Egész szám -> EMBER.EAZON
+EMBER2 : Egész szám -> EMBER.EAZON
+)
+Az EMBER tábla tartalmazza az egyes emberek azonosítóját (EAZON), vezetéknevét
+(VNEV), keresztnevét (KNEV), születési dátumát (SZULDAT) valamint a nemét (NEM).
+A nem meghatározásánál az F jelöli a férfiakat és az N a nõket.
+A CSOPORT tábla a felhasználók által definiált csoportok alapadatait tartalmazza. A csoport
+azonosítója (CSAZON), neve (CSNEV), és a létrehozójának EMBER tábla béli azonosítója
+(LETREHOZO) található a táblában.
+A csoport tagságokat a CSOPTAG táblában tároljuk, ahol a kapcsolat azonosítója
+(CSTAZON), a csoport azonosítója (CSOPORT) és a csoport tagjának az EMBER táblában
+lévõ azonosítója (TAG) található
+Az emberek közötti ismeretségeket az ISMER tábla tartalmazza. Az ismeretség azonosítója
+(IAZON) mellett ebben a táblában még két mezõ található. A kapcsolatot megjelölõ személy
+(EMBER1) és a kapcsolatot visszaigazoló személy (EMBER2) azonosítója. Ezen utóbbi két
+mezõ az EMBER táblában található EAZON mezõkkel kapcsolódik.
+
+a.) Készítsen lekérdezést, mely egy NEV nevû oszlopban adja vissza azon emberek VNEV és
+KNEV adatát egy szóközzel elválasztva, akik tagjai valamely csoportnak! A lista legyen
+névsor szerint rendezett!
+
+b.) Készítsen lekérdezést mely CSOPKIV néven megadja azon emberek számát, akik egy
+csoportnak sem tagjai!
+
+c.) Készítsen lekérdezést, mely megadja a „Bélyeggyûjtõ” nevû csoport tagjait! Az
+eredményben a vezeték és a keresztnév szerepeljen! Feltehetjük, hogy nincsenek egyezõ
+nevû csoportok.
+

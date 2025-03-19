@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1386446232 source:h:\programok\házi\hazi4\main.cpp
+	<iostream>
+	<locale>
+

@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+string nev(string name);
+
+int main()
+{
+	string name;
+	cout<<"Kerem a nevet: "<<"\n";
+	getline (cin,name);
+	cout<<"A nev monogramja: "<<nev(name);
+	return 0;
+}
+string nev(string name)
+{
+	int x;
+	string mg;
+	if (isalpha(name[0]))
+	{
+		mg+=toupper(name[0]);
+	}
+	for (x=0;x<name.size()-1;x++)
+	{
+		if (isspace(name [x]) && isalpha (name [x+1]))
+		{
+			mg+=toupper(name[x+1]);
+		}
+	}
+	return mg;
+}

@@ -1,0 +1,6 @@
+alma,20,kg,15,200,A 1
+körte,30,kg,15,250,A 2
+krumpli (burgonya),40,kg,50,100,B 1
+hagyma,30,kg,50,150,B 2
+pálinka,10,üveg,15,300,C 1
+lapát,10,darab,5,1500,D 10

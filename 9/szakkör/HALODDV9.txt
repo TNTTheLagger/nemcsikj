@@ -1,0 +1,179 @@
+
+
+                       T  M A Z  R O   N A G Y D O L G O Z A T
+
+                                   H l¢zatelm‚let 9. e reszere
+
+
+    N‚v:..........................
+
+
+    I.Tesztk‚rd‚sek - csak az egyik v lasz igaz, melyik ez? A javit sn l
+    egy‚rtelmen jel”ld az igaz v laszt.
+
+    1.A SIN topol¢gia olyan egyszer helyi h l¢zati topol¢gia, ahol
+
+               1. gerincvezet‚ket haszn lva az egyes  llom sok kl”n
+                  k bellel csatlakoznak a k”zponti g‚phez.
+
+               2. A f”k belre az  llom sok p rhuzamosan kapcsol¢dnak,
+                  s ennek v‚geit hull mellen l ssal z rj k le.
+
+               X. A sok k bel miatt dr ga az elj r s, s neh‚zkes a
+                  hibafelt r s is.
+
+    b. Milyen topol¢gi j£ az IBM Token Ring Network h l¢zat
+
+               1. logikai gyr-fizikai csillag
+
+               2. logikai sin-fizikai csillag
+
+               X. logikai gyr-fizikai sin
+
+    c. Mi az optikai k bel? Olyan
+
+               1.  rny‚kol s n‚lkli egyetlen k bel‚r, melynek az
+                  install l sa igen bonyolult a k belcsatlakoz¢k
+                  felszerel‚se miatt
+
+               2. vastag t”m”r k‚bel‚r, amely az elektrom gneses zavarokkal
+                  szemben kisebb ‚rz‚kenys‚g
+
+               X. k beltipus, amely igen nagy  tviteli sebess‚get tesz
+                  lehet”v‚, amit a h l¢zatban ma m‚g nem is tudnak teljes
+                  m‚rt‚kben kihaszn lni.
+
+    d. A PC rendszerinterf‚sz‚n keresztli forgalmaz s egyik m¢dja a
+    k”z”s hozz f‚r‚s I/O port. Mit ‚rtnk ez alatt?
+
+               1. Az  tvitelt egy temben val¢sitja meg a PC ‚s a csatol¢
+                  k”z”tt
+
+               2. Puffert haszn lva a leggyorsabb mk”d‚st biztositja
+
+               X. Csak folytonos munkaterletr”l tud forgalmazni
+
+    e. Mi a passziv HUB? Olyan k belkoncentr tor, mely
+
+               1. a gyr topologi j£ h l¢zatok mk”d‚s‚t javitja
+
+               2. nem multiplik lhat¢
+
+               3. nagyobb t vols gok(5-600 m) 4 v. 8 csatlakoz¢pontos
+                  ”sszekapcsol s ra szolg l
+
+    f. A h l¢zati csatol¢egys‚g egy olyan 
+
+               1. h l¢zati interf‚sz, amely a felhaszn l¢i program , illetve
+		a f jl szerver szoftver k”z”tti kapcsolatot teremti meg
+
+               2. h l¢zati hardver elem, amely a befogad¢ sz m¡t¢g‚p rendszer-
+             interf‚sze ‚s a a h l¢zati k bel k”z”tt teremti meg a a kapcsolatot
+
+               X. h l¢zati szoftver, amely az egym ssal kapcsolatban  ll¢ 
+	 llom nyok aktualiz l s t val¢s¡tja meg, de nem vez‚rli a fejpozicion l st
+
+
+
+
+
+
+    II. Karik zd be az igaz v laszt(t”bb is lehets‚ges)!
+
+    a. A gyr topologia nagy h tr nya, hogy ha a szerver meghib sodik, az
+    eg‚sz h l¢zat zemk‚ptelenn‚ v lik.
+
+    b. A k belhib t legjobban a csillag topologia ,,viseli el,, , hiszen
+    itt minden  llom s a saj t k bel‚vel csatlakozi a szerverre, igy annak
+    hib ja csak egyetlen  llom s mk”d‚s‚t akad lyozza.
+
+    c. A switch jelet erosit.
+    A CSMA olyan protokoll,
+
+               d. mely olyan rendszerekben terjedt el, ahol a rendszer-
+    v laszid”k megv ltoz sa akad lyozza a h l¢zat rendeltet‚sszer
+    haszn lat t.
+
+               e. ahol az zenetcsomagok tk”zhetnek, mivel k‚t  llom s
+    v‚letlenszeren, egyszerre is kezdem‚nyezhet forgalmaz st.
+
+               f. melyet determinisztikus protokollnak is neveznek, mert az
+     llom sok forgalmaz si lehet”s‚gei ‚s a rendszer v laszidei a h lozat
+    oldal rol jol defini ltak.
+
+   
+
+
+    III.A h l¢zatot haszn lva a k”vetkez”k feladatokat oldjuk meg ‚s
+    ¡
+
+
+    1.Bejelentkeznk a  saj t felhaszn l¢i n‚vvel. 
+      Milyen jogosultagok vannak?
+
+
+    2.Nezze meg a sajat konyvtarban a jogait es ierje le milyen joga van.
+      Melyik jog van a nemcsikj konyvtarban?
+
+    
+   
+    3. Mi az IP cime es hogy tudja megnezni?
+
+
+  
+
+
+
+
+
+
+    IV. V laszolj a k”vetkez” k‚rd‚sekre ir sban!
+
+    a.Mi a gateway(kapu)?
+
+
+
+
+
+
+
+
+
+
+    b. Mi az OSI modell és mik a fobb szintjei?
+
+
+
+
+
+
+
+
+
+
+
+
+     c. Mit valosit meg a TCP/IP Internet rétege?
+
+
+
+
+
+    d. Rajzolja le a sin topologiat, mit tud rola (elonye, hatranya, reszei).
+
+
+
+
+    e. Mit valositanak meg a kovetkezo protokollok(jelentese stb)?
+        POP3
+        SMTP
+        HTTP
+        FTP
+
+
+
+
+
+
+  
+J¢ munk t!

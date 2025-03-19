@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class Alap {
+int alap;
+public:
+Alap(int i) :alap(i) { cout << alap << 'k';}
+Alap(const Alap& a) :alap(a.alap) { cout << alap << 'c';}
+operator bool() { return alap == 0; }
+~Alap() { cout << 'd'; }
+};
+class Masik {
+Alap a;
+const char *m;
+public:
+Masik(int a, const char *m) :a(a), m(m) { cout << m << 'M'; }
+void operator=(const Masik& e) { a = e.a; cout << '=' << e.m; }
+~Masik() { cout << 'D'; }
+};
+int main() {
+Masik m1(1, "MEG123"); cout << endl;
+Masik m2 = m1; cout << endl;
+m1 = m2; cout << endl;
+Alap a1(0); cout << endl;
+if (a1) cout << "g12" << endl;
+else cout << "me" << endl;
+return(0);
+}

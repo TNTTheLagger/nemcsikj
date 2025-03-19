@@ -1,0 +1,9 @@
+c:\users\nemcsikj\documents\visual studio 2010\Projects\tk\tk\bin\Debug\tk.exe
+c:\users\nemcsikj\documents\visual studio 2010\Projects\tk\tk\bin\Debug\tk.pdb
+c:\users\nemcsikj\documents\visual studio 2010\Projects\tk\tk\obj\x86\Debug\tk.exe
+c:\users\nemcsikj\documents\visual studio 2010\Projects\tk\tk\obj\x86\Debug\tk.pdb
+J:\tk\tk\obj\x86\Debug\tk.exe
+J:\tk\tk\obj\x86\Debug\tk.pdb
+J:\tk\tk\bin\Debug\tk.exe
+J:\tk\tk\bin\Debug\tk.pdb
+J:\tk\tk\obj\x86\Debug\ResolveAssemblyReference.cache

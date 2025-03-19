@@ -1,0 +1,4 @@
+G:\erdo2\erdo\erdo\bin\Debug\erdo.exe
+G:\erdo2\erdo\erdo\bin\Debug\erdo.pdb
+G:\erdo2\erdo\erdo\obj\x86\Debug\erdo.exe
+G:\erdo2\erdo\erdo\obj\x86\Debug\erdo.pdb

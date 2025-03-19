@@ -1,0 +1,12 @@
+Készíts lekérdezést:
+1. az egyes állatoknak hány gazdájuk van
+2. a nem kutyáknak átlagosan hány gazdájuk van
+3. a kaposváriaknak hány kilós a legnehezebb állatuk
+4. a fiúk legnehezebb állata hány kiló
+5. a lányok állatai közül melyik van az ábécében leghátul
+6. a legöregebb gyerek állatát hogy hívják
+7. a nem kaposváriak közül hány fiú
+8. hány kaposvári van
+9. melyik településen él a legkevesebb gyerek
+Készíts ûrlapot:
+10. a gyerekek táblához, ne látsszon az azonosító, és színezd át

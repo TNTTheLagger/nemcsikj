@@ -1,0 +1,41 @@
+Mit ír ki a szabványos kimenetre az alábbi program? Válaszához használja a négyzetrácsos területet! A soremelések
+segítségül szerepelnek a programban, de nem szükséges a soremelésekkel foglalkoznia. Abba a sorba írjon, amelyik
+sorban a kiírás keletkezik, ez lehet egy zárójelet tartalmazó sor is! A többit hagyja üresen!
+#include <iostream>
+#include <string>
+using namespace std;
+class Hiba {
+int h;
+public:
+Hiba(int h) :h(h) { cout << 'H' << endl << endl;}
+int hibaKod() { return h; };
+};
+struct A0 {
+A0() { cout << '1'; }
+~A0() { cout << 'd'; }
+};
+class Alap : public A0 {
+int al;
+string n;
+public:
+Alap(int i, const char *p = "N123OO") : n(p) {
+if (i == 0) throw Hiba(1);
+al = i;
+cout << i << 'k';
+}
+Alap(const Alap& a) :al(a.al) { cout << al << 'C' << endl << endl;}
+Alap& operator=(const Alap& a) { al = a.al; cout << a.n; return *this; }
+~Alap() { cout << 'D'; }
+};
+int main() {
+Alap a0(52); cout << endl;
+try { cout << endl;
+Alap a1(1, "23o"); cout << endl;
+a0 = a1; cout << endl;
+Alap a2(0,"n1"); cout << endl;
+Alap a3 = a1; cout << endl;
+} catch (Hiba& h) { cout << endl;
+cout << h.hibaKod(); cout << endl;
+} cout << endl;
+return(0);
+}

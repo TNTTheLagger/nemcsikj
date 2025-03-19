@@ -1,0 +1,6 @@
+Re_az	Rendezvény	Helyszín	Helyiség	Kezdési idõpont
+1	Ráhangoló ünnepély	Neumann Gimnázium	Tornacsarnok	2008.10.10 10:00
+2	Öreg diákok találkozója	Szolnok Mj. Város Önkormányzata	Díszterem	2008.10.10 13:00
+3	Tudomány Napi Rendezvények	Gárdonyi Gimnázium	Aula	2008.10.10 20:00
+4	Média és az új kor	Dobó Gimnázium	2. emelet	2008.10.11 11:00
+5	Gálamûsor	Madách Színház	Nagyszínpad	2008.10.11 19:00

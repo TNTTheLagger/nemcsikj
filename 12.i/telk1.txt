@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
+namespace telk
+{
+    class Telek
+    {
+        int hazszam;
+
+        public int Hazszam
+        {
+            get { return hazszam; }
+            set { hazszam = value; }
+        }
+        int szelesseg;
+
+        public int Szelesseg
+        {
+            get { return szelesseg; }
+            set { szelesseg = value; }
+        }
+        int magassag;
+
+        public int Magassag
+        {
+            get { return magassag; }
+            set { magassag = value; }
+        }
+        int jobbSarok;
+
+        public int JobbSarok
+        {
+            get { return jobbSarok; }
+            set { jobbSarok = value; }
+        }
+        int balSarok;
+
+        public int BalSarok
+        {
+            get { return balSarok; }
+            set { balSarok = value; }
+        }
+    }
+    class Program
+    {
+        static SortedList<int, Telek> telkek;
+ 
+        static int telkekSzama;
+        const int teljesMagassag = 80;
+        const int maxSzelesseg=40;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Telek érettségi feladat");
+            telkek = new SortedList<int,Telek>();
+   
+            F1();
+     
+            Console.WriteLine("ok az elsõ");
+            Console.ReadLine();
+        }
+
+    
+
+        private static void F1()
+        {
+           StreamReader sr = new StreamReader(@"telkek.txt", Encoding.Default);
+           telkekSzama = Convert.ToInt16(sr.ReadLine());
+           while (!sr.EndOfStream)
+           {
+               string[] sor = sr.ReadLine().Split(' ');
+               Telek aktTelek = new Telek();
+               aktTelek.Hazszam=Convert.ToInt16(sor[0]);
+               aktTelek.Szelesseg = Convert.ToInt16(sor[1]);
+               aktTelek.Magassag = Convert.ToInt16(sor[2]);
+               telkek.Add(aktTelek.Hazszam, aktTelek);
+               Console.WriteLine("a sorok {0}, {1}, {2}, {3} ", sor[1], aktTelek.Hazszam,aktTelek.Szelesseg, aktTelek.Magassag);
+               
+           }
+           sr.Close();
+
+          
+
+
+        }
+    }
+}

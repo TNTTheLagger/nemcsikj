@@ -1,0 +1,21 @@
+gyartmanyazonosito;megnevezes;orszag
+1;Opel;Németország
+2;Volkswagen;Németország
+3;Mercedes;Németország
+4;Audi;Németország
+5;Renault;Franciaország
+6;Citroen;Franciaország
+7;Peugeot;Franciaország
+8;Fiat;Olaszország
+9;Alfa Romeo;Olaszország
+10;Dacia;Románia
+11;Seat;Spanyolország
+12;Lada;Oroszország
+13;Daewoo;Dél Korea
+14;Kia;Oroszország
+15;Suzuki;Japán
+16;Skoda;Csehország
+17;Toyota;Japán
+18;Honda;Japán
+19;Ford;USA
+20;BMV;Németország

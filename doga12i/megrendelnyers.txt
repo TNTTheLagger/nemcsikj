@@ -1,0 +1,31 @@
+<div class="field_item">
+                            <select name="pizza">
+                                <option value="">- válasszon -</option>
+                                <option value="4evszak">4 évszak</option>
+                                <option value="alexandra">Alexandra</option>
+                                <option value="erospista">Erõs Pista</option>
+                                <option value="extra">Extra</option>
+                                <option value="gombas">Gombás</option>
+                                <option value="gyumolcsos">Gyümölcsös</option>
+                                <option value="hawaii">Hawaii</option>
+                                <option value="kolbaszos">Kolbászos</option>
+                                <option value="magyaros">Magyaros</option>
+                                <option value="sonkas">Sonkás</option>
+                                <option value="szalamis">Szalámis</option>
+                                <option value="tengergyumolcsei">Tenger gyümölcsei</option>
+                                <option value="tonhalas">Tonhalas</option>
+                                <option value="vegetarianus">Vegetáriánus</option>
+                            </select>
+                        </div>
+
+
+
+
+ <div class="field_item">
+                            <select name="varos">
+                                <option value="">- válasszon -</option>
+                                <option value="bgy">Eger</option>
+                                <option value="evk">Boconád</option>
+                                <option value="rsg">Apc</option>
+                            </select>
+                        </div>

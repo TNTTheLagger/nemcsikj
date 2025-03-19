@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1386145196 source:g:\c++\10feladat\main.cpp
+	<iostream>
+	<cmath>
+

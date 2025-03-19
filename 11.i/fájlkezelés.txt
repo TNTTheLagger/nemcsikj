@@ -1,0 +1,56 @@
+Számítástechnika 
+Név: 
+
+Fájlkezelés 1. 
+
+1. Írja le a szöveges állományok kezelésének lépéseit!! 
+
+
+
+
+
+
+
+2. 
+Hogyan lehet állományok hibakezelését megvalósítani a megnyitásnál?
+
+
+
+
+
+
+
+ 
+3. mit értünk típusos fájlkezelés alatt? Írjon példát! 
+
+
+
+
+4. Hogyan tudunk megnyitni egy állomány?
+
+
+
+
+ 
+5. A fájl összerendelésekor a fizikai fájl nem a fõkönyvtárban található. Mi a teendõ 
+ilyenkor? 
+
+
+
+
+6. 
+
+Definiáljon rekordot, amely a következõ 
+adatokat tartalmazza: név, beosztás, fizetés, fiu_e! 
+
+
+
+
+
+
+
+
+
+
+
+

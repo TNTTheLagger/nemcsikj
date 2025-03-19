@@ -1,0 +1,10 @@
+E:\Nemcsik\hm16\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Nemcsik\hm16\bin\Debug\hm16.exe
+E:\Nemcsik\hm16\bin\Debug\hm16.pdb
+E:\Nemcsik\hm16\obj\x86\Debug\hm16.exe
+E:\Nemcsik\hm16\obj\x86\Debug\hm16.pdb
+G:\PROG\hm16\bin\Debug\hm16.exe
+G:\PROG\hm16\bin\Debug\hm16.pdb
+G:\PROG\hm16\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\PROG\hm16\obj\x86\Debug\hm16.exe
+G:\PROG\hm16\obj\x86\Debug\hm16.pdb

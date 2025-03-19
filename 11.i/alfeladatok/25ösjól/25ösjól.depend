@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1386582242 source:g:\programok\25ösjól\main.cpp
+	<cstdlib>
+	<time.h>
+	<iostream>
+

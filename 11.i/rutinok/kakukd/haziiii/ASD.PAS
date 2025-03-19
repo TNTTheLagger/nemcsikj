@@ -1,0 +1,20 @@
+program teruletszam;
+uses crt;
+var a,b,r: real;
+var t1,t2:real;
+
+function  ter(a,b,r:real):char;
+	  begin
+	  t1:=a*b; t2:=r*r*3.14;
+	  if t1>t2 then ter:='T'
+		   else ter:='K';
+	  end;
+
+begin
+clrscr;
+writeln('Adja meg az a-t: '); readln(a);
+writeln('Adja meg az b-t: '); readln(b);
+writeln('Adja meg az r-t: '); readln(r);
+writeln(ter(a,b,r));
+readkey;
+end.

@@ -1,0 +1,171 @@
+Azonosító	Név	Város	Cím	Született	Fizetés	Jutalom	Neme
+11111111	Nem Tamás	Alsófalva	Ezmi u. 9	1984.11.11	220554	15000	férfi
+11232120	Gáspár Olga	Velence	Colos u.1	1987.07.08	98381	48000	nõ
+11234578	Kun Béla	Bélapátfalva	Bili u. 17	1987.11.12	65384	36000	férfi
+11236548	Fogarasi Árpád	Kocsord	Objektum u. 1	1961.11.11	307855	36000	férfi
+11245987	Vagyok Ibolya	Demjén	Csatorna u. 1	1978.12.01	212096	19000	nõ
+11265465	Polgár Jenõ	Polgárfalva	Polgár u. 15	1987.04.14	264165	27000	férfi
+11324560	Oláh Gáspár	Cigányda	Roma u.11	1987.07.08	137158	46000	férfi
+11457897	Somogyi Erika	Szada	Lenin u. 15.	1945.04.06	193363	46000	nõ
+11478568	Szalacsi Sándor	Kocsord	Nemtom u. 30	1960.11.23	184545	23000	férfi
+11547889	William Clinton	Ózd	Wájtháusz u. 1	1954.07.07	285206	11000	férfi
+12234578	Sipos Károly	Tiszakécske	Fürdõ utca 15.	1980.10.18	78778	44000	férfi
+12358794	Ináncsi József	Szigetszentmiklós	Ady u.96.	1952.08.29	149721	48000	férfi
+12457896	Kuti Kamilla	Szigetszentmiklós	Vénusz u.1.	1958.06.24	281336	18000	nõ
+12485369	Sipos Gábor	Bög	Pici köz 5.	1970.05.23	171701	4000	férfi
+12567843	Varga Dóra	Szolnok	Som köz 48.	1979.11.30	144949	22000	nõ
+12568490	Varga Tamás	Szeged	Teve köz 45.	1945.05.25	213615	42000	férfi
+12584675	Szabó Éva	Mezõhegyes	Béke u.16.	1970.02.23	182674	38000	nõ
+12589647	Szabó Attila	Tiszakécska	Szabolcskai u.1	1956.10.20	211794	33000	férfi
+12597560	Sunyi Béla	Kecskemét	Kossuth L. u.14.	1963.02.13	294523	5000	férfi
+12968740	Németh Noémi	Pécs	Szabó köz 20.	1985.12.23	82454	15000	nõ
+13000000	Németh Sára	Eger	Dobó utca 10.	1938.03.03	253524	27000	nõ
+13111111	Kiss Jenõ	Budapest	Kossuth utca 23.	1978.01.01	324666	49000	férfi
+13123456	Nagy Antal	Kecskemét	Ó utca 3.	1966.04.12	309611	46000	férfi
+13222222	Végh József	Gyõr	Körte utca. 23.	1980.09.24	57443	7000	férfi
+13444444	Szigeti Sándor	Pécs	Könyv utca 34.	1977.11.13	315764	4000	férfi
+13523453	Horváth Kinga	Mosonmagyaróvár	Kölcsey utca 182.	1945.12.23	184889	34000	nõ
+13635634	Torgyán Andrea	Szeged	Posztógyár utca 12.	1981.12.31	61167	23000	nõ
+13654758	Kondor Katalin	Budapest	Zrínyi utca 112.	1978.12.12	287247	9000	nõ
+13666666	Kovács Helga	Szombathely	Alma utca 11.	1979.02.09	325358	21000	nõ
+13999999	Pintér Sándor	Debrecen	Petõfi utca 33.	1955.01.31	212158	10000	férfi
+14000000	Bodor Enikõ	Budapest	Erdõalja út 8.	1966.05.04	274781	31000	nõ
+14012345	Céhes Eszter	Budapest	Kossuth u. 78.	1970.07.09	296289	12000	nõ
+14012987	Takács Lilla	Szeged	Agár u. 1.	1982.12.09	325866	38000	nõ
+14131111	Bak Dániel	Vecsés	Gyöngy u. 6.	1973.03.06	96106	48000	férfi
+14134598	Szabó Péter	Cegléd	Cegléd u. 78.	1956.10.23	226231	24000	férfi
+14232100	Szokai Barbara	Dég	Galambóc köz 96.	1969.05.08	184629	16000	nõ
+14234232	Czeczei András	Tököl	Repülõ út 9.	1985.12.09	205444	39000	férfi
+14238654	Horváth Dezsõ	Budapest	Cservenka u. 12.	1968.07.09	338631	11000	férfi
+14245736	Karap Béla	Szigliget	Kölcsey u. 37.	1976.03.05	61443	10000	férfi
+14314564	Morvay Jenõ	Pécs	Fülemile köz 56.	1980.06.08	297254	31000	férfi
+15000001	Vígh József	Budapest	Zsil u. 32	1972.05.26	202335	6000	férfi
+15000002	Éliás Tóbiás	Zalaháza	Péterfi u. 53	1982.01.09	103102	32000	férfi
+15000003	Bomberra Krisztina	Pécs	Maja u. 153	1978.06.25	232925	24000	nõ
+15000004	Zsák Judit	Marosháza	József u. 54	1983.02.13	222083	22000	nõ
+15000005	Méh Erika	Bugyi	Csipke u. 13	1980.12.14	246126	35000	nõ
+15000006	Fritz Attila	Komárom	Baross u. 765	1971.06.30	267901	28000	férfi
+15000007	Vaal Máté	Vác	Teréz u. 367	1959.07.25	220726	43000	férfi
+15000008	Kárai Kata	Pécs	Vízvezeték u. 666	1966.08.11	122245	25000	nõ
+15000009	Prezma Aurora	Gyál	Majom u. 3445	1966.12.05	137207	30000	nõ
+15000010	Mária Terézia	Baja	Gyorskocsi u. 323	1978.07.16	76465	36000	nõ
+16123456	Asztal Sándor	Budapest	Sötét u. 23	1969.09.09	231754	41000	férfi
+16294638	Hûtõ Béla	Dunafalva	Bobby  u. 665	1960.01.01	126139	36000	férfi
+16345278	Gép Béla	Ráckeve	Az u. 17	1985.08.23	277660	39000	férfi
+16389256	Mayer Tamás	Miskolc	Teknõ u. 132	1988.12.12	69054	7000	férfi
+16398734	Inger Rozália	Sopron	Trianon u. 22	1995.11.10	344391	38000	nõ
+16483629	Csavar Pista	Szeged	Killer u. 23	1945.01.31	234074	1000	férfi
+16493528	Víz Gizella	Berlin	Szék u. 13	1967.12.23	104223	35000	nõ
+16938542	Nem János	Visegrád	Persze.u. 666	1946.12.30	143081	25000	férfi
+16982364	Prézli János	Szigetszentmiklós	Oázis u.34	1978.04.14	169183	41000	férfi
+16987654	Gomb Sára	Debrecen	Seholsincs u.4	1977.11.12	313310	35000	nõ
+17468556	Czeczei Zsolt	Budapest	Fülemile utca 7.	1985.11.05	86026	33000	férfi
+17479821	Sarkadi Csaba	Budapest	Fürdõ utca 8.	1985.05.29	230294	40000	férfi
+17564986	Gábor Gizella	Pécs	Fõ tér 6548.	1965.12.29	181108	2000	nõ
+17569856	Gaz Julianna	Szombathely	Hõsõk tere 45.	1968.04.05	131620	12000	nõ
+17584313	Fül Elek	Szeged	Kenguru sétány 15.	1965.11.15	112590	6000	férfi
+17656598	Dávid Ilona	Nemesvita	Rákóczi Ferenc út 34.	1935.07.06	115651	20000	nõ
+17659877	Presser Gábor	Tapolca	Petõfi Sándor út 45.	1989.01.29	173758	25000	férfi
+17665789	Fehér Jakab	Eger	Kölcsey Ferenc utca 4.	1945.06.05	241893	24000	férfi
+17956487	Szokai Kinga	Debrecen	Dobó Béla kör 556.	1935.12.31	101498	8000	nõ
+17986298	Kodály Zoltán	Aggtelek	Juhász István köz 45.	1956.02.22	82961	28000	férfi
+18164164	Fekete Andrea	Biharkeresztes	Aradi út 2.	1980.01.01	124880	48000	nõ
+18235698	Seres András	Szekszárd	Fõ utca 145.	1986.05.23	214497	6000	férfi
+18416466	Károly Zoltán	Agárd	Õz út 21.	1972.04.12	139730	17000	férfi
+18454644	Barna Ágota	Veresegyháza	Puli sétány 11.	1995.05.01	252032	43000	nõ
+18455697	Balogh Éva	Ópusztaszer	Rigó utca 14.	1973.07.05	77558	37000	nõ
+18457892	Szabó Dénes	Kisvárda	Bab utca 7.	1978.12.12	169537	34000	férfi
+18464684	Kónya Anett	Szalkszentmárton	Mátra utca 19.	1975.02.04	186852	11000	nõ
+18466464	Budai Antal	Gyõr	Iskola tér 36.	1970.06.15	144107	34000	férfi
+18546987	Kovács János	Budapest	Rákóczi tér 3.	1981.02.12	346023	9000	férfi
+18646464	Lakatos Pál	Siófok	Szajkó utca 6.	1964.04.01	59538	1000	férfi
+19012345	Vonal Deodát	Pécs	Sík u. 19.	1979.10.10	187753	3000	férfi
+19123456	Fritz Géza	Budapest	Fény u. 23.	1970.01.01	288983	35000	férfi
+19234567	Szabó András	Tas	Erdõ u. 34.	1956.12.01	269287	48000	férfi
+19345678	Kiss Csilla	Bélatelep	Örs u. 1.	1967.03.04	337231	16000	nõ
+19456789	Gulág Tóbiás	Budapest	Nap u. 23.	1976.09.09	109873	39000	férfi
+19543210	Wesselényi Brúnó	Szarvas	Állat u. 34.	1964.11.11	130108	39000	férfi
+19654321	Pokol Petúnia	Fenékpuszta	Törpe u. 10.	1975.09.12	256368	47000	nõ
+19765432	Pán Péter	Andorváros	Zulu u. 70.	1970.01.23	59096	10000	férfi
+19876543	Világi Virág	Garamvölgy	Jós u. 56.	1980.03.31	347147	20000	nõ
+19987654	Él Ilona	Nagycenk	Anyós u. 4./a	1959.12.31	299865	2000	nõ
+20021222	Takács Nándor	Büdösfalva	Barbár út 14.	1985.10.20	343382	43000	férfi
+20112131	Beri Dániel	Tótújfalu	Zsák utca 8.	1984.07.17	222943	1000	férfi
+20123456	Szokai Kinga	Dunaborzasztó	Elm utca 4.	1983.05.15	295981	18000	nõ
+20233343	Présinger Tamás	Sárvár	Szabó sétány 22.	1987.02.13	297147	18000	férfi
+20324252	Czeczei Zsolt	Rákosváros	Vandál körút 16.	1986.11.21	52042	29000	férfi
+20415161	Morvay Levente	Sárvár	Kuka utca 10.	1984.08.18	76449	21000	férfi
+20627282	Sarkadi Csaba	Sárvár	Robert utca 18.	1986.12.22	75338	10000	férfi
+20718192	Szûcs Gábor	Pornóapáti	Csöves sétány 12.	1985.09.19	265928	22000	férfi
+20789101	Szabó Balázs	Nagykunháza	Szögletes körút 6.	1983.06.16	51304	27000	férfi
+20930313	Pastinszky Tamás	Sopronkõhida	Rácsos utca 20.	1987.01.14	325980	28000	férfi
+21065431	Öregh Amália	Öregfalva	Vénember u. 34.	1956.04.19	315782	46000	nõ
+21465432	Nagy Zoltán	Budapest	Fogarasi u. 142.	1985.02.05	67928	5000	nõ
+21564542	Kovács Beáta	Debrecen	Széchenyi u. 123.	1963.11.14	86887	30000	nõ
+21645654	Magyar Erzsébet	Szeged	Munkás u. 48.	1972.02.05	287814	38000	nõ
+21654320	Fityeházi Ágoston	Sárvár	Fõ u. 1.	1956.04.19	191446	10000	férfi
+21654684	Tóth Gyula	Budapest	Felszabadulás tér 32.	1956.10.23	261433	44000	férfi
+21654876	Dávid Izaura	Gödöllõ	Kun Béla tér 3.	1948.05.24	300039	34000	nõ
+21657654	Kolompár Gáspár	Hajdúböszörmény	Retek sor 6.	1966.06.06	253794	2000	férfi
+21684351	Medgyessi Pál	Szombathely	Petõfi u. 47.	1926.09.03	282749	39000	férfi
+21845641	Kozlovszky Jenõ	Szentgotthárd	Elefánt köz 12.	1915.02.13	248206	18000	férfi
+22145645	Brazil Béla	Bukarest	Lejmol u. 54	1969.06.09	299524	42000	férfi
+22215611	Égerházi Zsanett	Ózd	Kalauz u. 56	1978.06.08	295283	15000	nõ
+22261454	Nájt Mihály	Jakarta	Öcsém u. 2	1980.06.07	344839	34000	férfi
+22415416	Fekete Frigyes	Szentpétervár	Vörös u.23421	1979.08.02	130135	45000	férfi
+22415615	Léc Elek	Serényfava	Zseb u. 2	1997.05.05	220506	3000	férfi
+22456146	Devon Mihály	Ózd	Kit u. 48	1985.03.07	61533	2000	férfi
+22515615	Gold Mária	Gyõr	Osztrák u. 546	1970.05.06	286186	44000	nõ
+22551451	Ormosi Teréz	Berlin	Jeti u. 89	1976.05.04	104671	44000	nõ
+22561456	Alsófalvi Amália	Kotkodácsfalva	Belga u. 456	1956.04.19	343647	40000	nõ
+22561561	Alsófalvi Amália	Zalakaros	Kalász u. 89	1965.05.13	130090	7000	nõ
+23255555	Tóth Imre	Budapest	Sás u. 14	1970.09.20	85381	13000	férfi
+23488960	Balogh Gábor	Szeged	Gyár u. 23	1975.01.06	193119	43000	férfi
+23567489	Bán Mihály	Répcelak	Híd u. 63	1979.12.16	191563	38000	férfi
+23568960	Kovács János	Gyula	Petõfi u. 12	1980.08.11	212865	47000	férfi
+23569870	Lakatos Lujza	Vác	Kossuth út. 88	1949.06.30	316271	44000	nõ
+23569978	Higli Jolán	Keszthely	Bak u. 55	1965.05.23	70292	14000	nõ
+23588489	Farkas Károly	Budapest	Hõsök útja 15	1972.07.14	209343	46000	férfi
+23596874	Lepési Mária	Lepsény	Ló u. 20	1956.05.27	227066	36000	nõ
+23656984	Nagy Kálmán	Pécs	Orvos u. 5	1966.06.21	279136	23000	férfi
+23694887	Kiss Borbála	Miskolc	Nyúl út. 19	1988.03.02	159775	32000	nõ
+24122586	Kálvin Ödömér	Tokajhegyalja	Hordó u. 9	1948.03.11	321959	2000	férfi
+24132459	Puli Sándor	Dombóvár	Szalma u.2	1958.01.04	122782	6000	férfi
+24656758	Lapos Elemér	Budapest	Kuka u.8	1973.04.13	306860	16000	férfi
+24657141	Kolompár Frigyes	Diósd	Füstös dûlõ.4	1981.12.24	343403	31000	férfi
+24689725	Kiss Ágnes	Budapest	Répa u.31	1971.12.03	125803	21000	nõ
+24746517	Kötö Irma	Szekszárd	Kelep u.2	1942.06.28	284049	25000	nõ
+24858585	Nagy Gyula	Piripócs	Tompa u.3	1967.05.04	111530	38000	férfi
+24858587	Sörös Sándor	Tápiólefetye	Sör u.1	1958.02.23	202216	2000	férfi
+24971320	Sörös Leopold	Tápióbicske	Hegyes u.98	1968.08.12	129999	30000	férfi
+24971632	Azér Lázár	Budapest	Vekerle u.6	1967.11.15	90729	26000	férfi
+25111716	Erdõs Árpád	Budapest	Heller u. 74.	1985.10.28	220353	49000	férfi
+25165340	Turpis Imre	Debrecen	Soproni út 345	1956.06.05	55582	20000	férfi
+25673451	Torgyán Attila	Szeged	Király u. 65	1956.05.01	342561	24000	férfi
+25674381	Gerecsény Eszter	Miskolc	Hegy u. 52	1968.04.06	260777	21000	nõ
+25678149	Határ Hugó	Szekszárd	Mátra u. 51	1960.02.02	156155	42000	férfi
+25712853	Szép Kálmán	Székesfehérvár	Szemrõ u. 76	1978.12.03	170663	25000	férfi
+25758165	Kecskés Mária	Kecskemét	Káposzta u.14.	1977.01.01	149959	30000	nõ
+25761248	Makrai Dezsõ	Budapest	Hollandi u.465	1985.12.16	218725	31000	férfi
+25765213	Mekk Elek Tihamér	Széplak	Ház u. 69	1978.04.01	268099	34000	férfi
+25895361	Torgyán József	Szeged	Gazdag u. 42.	1948.03.15	72182	23000	férfi
+26123456	Bödön Ödön	Szeged	Fõ út 110.	1967.10.12	166483	43000	férfi
+26564312	Volga Olga	Budapest	Rákóczi tér 67.	1950.01.01	197090	4000	nõ
+26654321	Béna Béla	Dombóvár	Beton köz 19.	1955.01.30	186064	43000	férfi
+26743682	Kapros Lajos	Pécs	Szántó köz 55.	1945.12.01	200943	37000	férfi
+26786230	Nehéz Teréz	Baja	Rét tér 123.	1977.05.05	228999	37000	nõ
+26836415	Habos Helén	Nyíregyháza	Kancsó sétány 98.	1966.06.09	64754	29000	nõ
+26873253	Átlagos Ákos	Balassagyarmat	Baromfi utca 189.	1934.12.12	119531	45000	férfi
+26943321	Kicsi Misi	Sopron	Virágos utca 56.	1978.10.10	186715	26000	férfi
+26986155	Izmos Vilmos	Szolnok	Vasút út 78.	1952.04.04	298796	47000	férfi
+26987654	Rizi Gizi	Debrecen	Mellék utca 15.	1956.10.23	343616	19000	nõ
+27166178	Halász Júlia	Gyõr	Hajnal 45.	1991.07.04	122520	32000	nõ
+27346465	Gyõri Tímea	Budapest	Kossuth 654.	1966.07.25	140646	21000	nõ
+27348654	Kiss Rozália	Gyõr	Fenyõ 34.	1935.07.18	248843	36000	nõ
+27365154	Körte Vilmos	Szolnok	Kék Ozstriga 69.	1969.04.03	256051	5000	férfi
+27545645	Pataki Aladár	Pécs	Szt. István 984.	1955.06.04	241873	11000	férfi
+27546683	Hegedûs Ilona	Pécs	Elõd 91.	1972.06.11	198774	30000	nõ
+27586345	Lakodalom Lajos	Budapest	Kresz 48.	1976.07.06	229541	15000	férfi
+27645654	Faragó Viktor	Budapest	Bokros 57.	1961.11.29	292099	26000	férfi
+27645686	Kovács Béla	Szolnok	Mókus 76.	1974.05.06	269895	19000	férfi
+27646554	Torgyán József	Budapest	Juharos 95.	1980.06.03	305412	5000	férfi

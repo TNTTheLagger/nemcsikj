@@ -1,0 +1,12 @@
+G:\hf2\hf\hf\bin\Debug\hf.exe
+G:\hf2\hf\hf\bin\Debug\hf.pdb
+G:\hf2\hf\hf\obj\x86\Debug\hf.exe
+G:\hf2\hf\hf\obj\x86\Debug\hf.pdb
+G:\hf2\hf\hf\obj\x86\Debug\hf.csprojResolveAssemblyReference.cache
+C:\Users\nemcsikj\Documents\hf2\hf\hf\obj\x86\Debug\hf.exe
+C:\Users\nemcsikj\Documents\hf2\hf\hf\obj\x86\Debug\hf.pdb
+C:\Users\nemcsikj\Documents\hf2\hf\hf\bin\Debug\hf.exe
+C:\Users\nemcsikj\Documents\hf2\hf\hf\bin\Debug\hf.pdb
+C:\Users\nemcsikj\Documents\hf2\hf\hf\obj\x86\Debug\hf.csprojResolveAssemblyReference.cache
+J:\C#\kugli\hf2\hf\hf\obj\x86\Debug\hf.exe
+J:\C#\kugli\hf2\hf\hf\obj\x86\Debug\hf.pdb

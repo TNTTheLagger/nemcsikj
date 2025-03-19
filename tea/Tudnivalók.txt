@@ -1,0 +1,65 @@
+A tealevelek mérete szerinti osztályozása
+A tealeveleket méret szerint 4 kategóriába sorolják. A leveles és a törmelék teákon az alábbi jelölések olvashatók:
+* Blatt (leveles) tea
+o Pekoe	P
+o Flowery Pekoe	FP
+o Orange Pekoe	OP
+o Flowery Orange Pekoe	FOP
+o Golden Flowery Orange Pekoe	GFOP
+o Tippy Golden Flowery Orange Pekoe	TGFOP
+o Fine Tippy Golden Flowery Orange Pekoe	FTGFOP
+o Special Fine Tippy Golden Flowery Orange Pekoe 1	SFTGFOPI
+* Broken (törmelék) tea
+o Dust 	D
+o Fannings	F
+o Broken Pekoe	BP
+o Broken Orange Pekoe	BOP
+o Flowery Broken Orange Pekoe	FBOP
+o Golden Flowery Broken Orange Pekoe	GFBOP
+o Special Tippy Golden Flowery Broken Orange Pekoe	STGFBOP
+* Fannings (morzsalék) - jó minõségû filteres teához
+* Dust (finom törmelék) - filteres teához, olcsó keverék
+A rövidítések jelentése:
+Special	= különleges (jó minõség)
+Fine	= finom
+Tippy	= fiatal, zsenge levélcsúcs 
+Golden	= aranyszínû, világos levélcsúcs 
+Flowery	= a nagyméretû tealevelet is jelöli
+(angol: virágos)
+Broken	= közepes méretû levél, kiadósabb fõzet
+(angol: törött)
+Orange	= fenséges, különösen jó
+(holland: Oranje - királyi ház)
+Pekoe	= fiatal, zsenge levélcsúcs
+(kínai: fehér pihe)
+1	= az elsõ, illetve a legjobb rostálás
+Dust	= legkisebb tört levél, ami a rosta alján megmarad
+(angol: por)
+Rendszertani besorolás 
+TÖRZS: zárvatermõk – Angiospermatophyta
+OSZTÁLY: kétszíkûek – Dicotyledonopsida
+REND: teavirágúak – Theales 
+CSALÁD: teafélék – Theaceae 
+ALCSALÁD: Kaméliafélék – Camelliodeae 
+NEMZETSÉG: Kamélia – Camellia 
+FAJ: Tea – Camellia sinensis 
+
+
+
+
+
+
+
+A tea összetevõi
+tein = koffein
+1,5-4% között mozog (az Arabica kávé koffeintartalma kb. 1,3%). Egy csésze kávé koffeintartalma: 0,08 g. Egy csésze tea koffeintartalma: 0,01-0,05 g. A kávéban található koffein gyorsan, és ezért a szívre és a vérkeringésre hat. A teában lévõ koffein lassan, és ezért az agyra és a központi idegrendszerre hat.
+csersav/ tannin
+A fekete tea magas arányban tartalmaz oxidált csersavat. A zöld tea ezzel szemben magas arányban tartalmaz nem oxidált csersavat. A zöld tea ezért viszonylag keserûbb, de ezáltal nyugtató hatású a gyomorra.
+cserzõanyag:
+(polifenolok csoportja)
+Teaflavin és tearubigén (fekete tea) = polifenol vegyületek, amelyek fõként a fõzet színét határozzák meg. A zöld tea tartalmaz flavonolokat, flavandiolokat és polikarbonsavakat. A fekete és a zöld tea ezáltal antioxidáns hatású!
+illóolajok:
+Meghatározzák az illatot és az aromát.
+nyomelemek, ásványi anyagok, vitaminok:
+A fluorid jót tesz a fogaknak, megakadályozza a szuvasodást. A kálium helyettesíti az ásványi anyagokat (jó hatással van az izmokra/idegekre), a mangán pedig fontos szerepet játszik a csontok felépítésében. A theophyllin és a theobromin vízhajtó hatású, élénkíti a légzést és az idegrendszert. A B1 vitamin fontos a bõrnek és a szemnek, növekedési vitaminként is ismert. A C vitamin csak a zöld teában fordul elõ (!), a fekete teában a fermentáció során lebomlik.
+

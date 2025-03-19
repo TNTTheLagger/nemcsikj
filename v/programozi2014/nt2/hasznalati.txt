@@ -1,0 +1,22 @@
+Kérjük a tisztelt kollégákat, hogy az egységes értékelés érdekében az alábbi eljárást alkalmazzák:
+1.	Az értékelõ gépen hozzák létre a \NT2 könyvtárat.
+2.	Bontsa ki az NT2.zip állományt.
+3.	Minden versenyzõ számára hozzanak létre egy külön könyvtárat (azon a meghajtón, amelyiken az NT2 van), 
+	és ezekbe másolják be a versenyzõk programjait (a feladatleírásban szereplõ néven). 
+	(Ha nem dott be exe-t, akkor le kell fordítani!)
+4.	Egy versenyzõ értékelése:
+	A. Az aktuális könyvtár legyen a versenyzõ könyvtára.
+	B. Adják ki az \NT2\t3 (\nt2\t1, \nt2\t2) parancsot, 
+		amely lefuttatja a versenyzõ programjait minden tesztesetre. 
+		Ha a végrehajtás megszakad, vagy meg kell szakítani, mert letelt a 60 másodperc, 
+		akkor ismét a \NT2\T3 parancsot kell kiadni, mindaddig,
+		amíg az “ÉRTÉKELÉS BEFEJEZÕDÕTT” üzenet meg nem jelenik a képernyõn. 
+		(A futtató tudja, hogy honnan kell folytatnia.)
+		Ezt követõen automatikusan elindul a megoldásokat értékelõ program, 
+		amely összesítést készít a versenyzõ könyvtárában EREDMENY.TXT néven, 
+		és az eredményt a képernyõre is kiírja.
+Megjegyzés:
+	A.) Java programok esetén a java telepítve legyen, a java virtuális gép programja az útban legyen.
+	B.) C# programok esetén a megfelelõ .NET keretrendszer telepítve legyen.
+	C.) Python programok esetén (a megfelelõ verziójú) Python interpreter telepítve legyen.
+	

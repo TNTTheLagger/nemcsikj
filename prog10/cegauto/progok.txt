@@ -1,0 +1,69 @@
+# Hármas feladat
+x=int(input('add meg a dolgozat pontszamat(0-100 ig): '))
+print('A dolgozat pontszáma: ',x)
+if x<50:
+    print('Elégtelen')
+elif x<60:
+    print('Elégséges')
+elif x<70:
+    print('közepes')
+elif x<85:
+    print('jó')
+else:
+    print('jeles')
+
+
+# Négy feladat oszthatóság
+szam=int(input('a, Bekérünk egy egész számot: '))
+if szam % 3 == 0:
+    print('A {} szám osztható 3-mal'.format(szam))
+else:
+    print('A {} szám NEM oszhaó 3-mal'.format(szam))
+
+#5-tel osztható
+szam=int(input('b, Bekérünk egy egész számot: '))
+if szam % 5 == 0:
+    print('A {} szám osztható 5-tel4'.format(szam))
+else:
+    print('A {} szám NEM oszhaó 5-mal'.format(szam))
+
+# 3mal 5tel
+szam=int(input('c, Bekérünk egy egész számot: '))
+if szam % 3 == 0 or szam % 5 == 0:
+    print('A {} szám osztható 3-mal vagy 5-tel'.format(szam))
+else:
+    print('A {} szám NEM oszhaó 5-mal vagy 5-tel5'.format(szam))
+
+
+
+# Iteráció,ciklusok alkalmazása, használata
+#szam=int(input('Add mega felső határt: '))
+for i in  range(2,22,2):
+    print(i,'Zombori Lili')
+
+
+# veletlen szam generelas
+import random
+jegy=random.randint(1,5)
+print(jegy)
+if jegy==1:
+    print('elégtelen')
+elif jegy==2:
+    print('elégséges')
+elif jegy==3:
+    print('közepes')
+elif jegy==4:
+    print('jó')
+else:
+    print('jeles')
+
+
+# tobb jegy generalasa
+jegyszam=int(input('Mennyi jegyet generáljak?(3-10-ig) '))
+while jegyszam>10 or jegyszam<3:
+    jegyszam=int(input('Mennyi jegyet generáljak?(3-10-ig '))
+for i in range(1,jegyszam+1):
+    jegy=random.randint(1,5)
+    print(i,'. generált jegy: ', jegy)
+
+

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>baranyilaszlozsolt.com</title>
+  <base href="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Baranyi László Zsolt weblapja. Itt találod az általam tanított Informatika, Digitális kultúra és Etika tantárgyakhoz készített segédleteket. ALF interaktív gyakorló és feleltető programba készített teszteket. Biblia programokhoz készített modulokat. Blogot, ahol beszámolok az általam végzett munkákról.">
+  <meta name="keywords" content="Baranyi László Zsolt, blzs.com, digitális kultúra, informatika, etika, Biblia, hit, mysword, theword, esword, bible, Alf, Jézus Krisztus, Isten, szeretet, kegyelem, Igehirdetés, Micro:bit, Scratch, Imagine Logo, Edison, Scottie Go, Lego EV3, Wordwall, ALF, Learningapp,">
+  <meta name="author" content="">
+
+  <!-- Google webfontok -->
+      <link href='//fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Oregano&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Alegreya+Sans+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Delius+Unicase&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    
+    <!-- Stíluslapok SERVER_PORT string(3) "443"
+-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="admin/css/jquery.dataTables.css" type="text/css" />
+  <link rel="stylesheet" href="themes/css/gallery.css" type="text/css">
+  <link rel="stylesheet" href="admin/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="admin/css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="themes/css/theme_clinic.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="themes/css/skin_clinic_tulips.css" type="text/css" media="screen" />
+<style type="text/css">
+
+.fb_iframe_widget span, .fb_iframe_widget iframe {
+  max-width:100% !important;
+  z-index:99999 !important;
+  min-height:520px;
+}
+
+HTML {
+  overflow-y:scroll;
+  overflow-x:auto;
+}
+
+button:focus {outline:0;}
+img:focus {outline:0;}
+
+img {
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+button {
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+      background-image: url("themes/css/images/bg/cardboard.png");
+    background-repeat: repeat;    background-attachment: fixed;
+    background-position: center;
+    }
+    #logo a {
+      background-image: url("themes/css/images/ixt7.png");
+      background-repeat: no-repeat;
+      width: 184px;
+      height: 100px;
+      max-width:100%;
+      background-size: contain;
+    }
+    div.fancythumbs {}
+
+
+  /* RESZPONZÍV KÉPNÉZEGETŐ  */
+  /*===============================================================================*/
+  #imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    -ms-touch-action: none;
+    touch-action: none;
+  }
+  #imagelightbox-overlay {
+    background-color: #000;
+    background-color: rgba( 0, 0, 0, .9 );
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  #imagelightbox-close
+  {
+    width: 2.5em; /* 40 */
+    height: 2.5em; /* 40 */
+    text-align: left;
+    background-color: #666;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10002;
+    top: 2.5em; /* 40 */
+    right: 2.5em; /* 40 */
+
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+  }
+  #imagelightbox-close:hover,
+  #imagelightbox-close:focus { background-color: #111; }
+
+  #imagelightbox-close:before,
+  #imagelightbox-close:after
+  {
+    width: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -1px;
+  }
+  #imagelightbox-close:before
+  {
+    -webkit-transform: rotate( 45deg );
+    -ms-transform: rotate( 45deg );
+    transform: rotate( 45deg );
+  }
+  #imagelightbox-close:after
+  {
+    -webkit-transform: rotate( -45deg );
+    -ms-transform: rotate( -45deg );
+    transform: rotate( -45deg );
+  }
+  #imagelightbox-caption
+  {
+    text-align: center;
+    color: #fff;
+    font-size:18pt;
+    background-color: #666;
+    position: fixed;
+    z-index: 10001;
+    width:100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.625em; /* 10 */
+  }
+  .imagelightbox-arrow
+  {
+    width: 3.75em; /* 60 */
+    height: 7.5em; /* 120 */
+    background-color: #444;
+    background-color: rgba( 0, 0, 0, .3 );
+    vertical-align: middle;
+    opacity: 0.3;
+    display: none;
+    position: fixed;
+    z-index: 10001;
+    top: 50%;
+    margin-top: -3.75em; /* 60 */
+  }
+  .imagelightbox-arrow-left	{ left: 2.5em; /* 40 */ }
+  .imagelightbox-arrow-right	{ right: 2.5em; /* 40 */ }
+  .imagelightbox-arrow:before
+  {
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    content: '';
+    display: inline-block;
+    margin-bottom: -0.125em; /* 2 */
+  }
+  .imagelightbox-arrow-left:before
+  {
+    border-left: none;
+    border-right-color: #cdcdcd;
+    margin-left: -0.313em; /* 5 */
+  }
+  .imagelightbox-arrow-right:before
+  {
+    border-right: none;
+    border-left-color: #cdcdcd;
+    margin-right: -0.313em; /* 5 */
+  }
+  #imagelightbox-overlay,
+  #imagelightbox-close,
+  #imagelightbox-caption
+  {
+    -webkit-animation: fade-in .25s linear;
+    animation: fade-in .25s linear;
+  }
+  @-webkit-keyframes fade-in
+  {
+    from	{ opacity: 0; }
+    to		{ opacity: 1; }
+  }
+  @keyframes fade-in
+  {
+    from	{ opacity: 0; }
+    to		{ opacity: 1; }
+  }
+  @media only screen and (max-width: 41.250em) /* 660 */
+  {
+    #container
+    {
+      width: 100%;
+    }
+    #imagelightbox-caption {font-size:14pt;}
+    #imagelightbox-close
+    {
+      top: 1.25em; /* 20 */
+      right: 1.25em; /* 20 */
+    }
+    #imagelightbox-nav
+    {
+      bottom: 3em; /* 20 */
+    }
+    .imagelightbox-arrow
+    {
+      width: 2.5em; /* 40 */
+      height: 3.75em; /* 60 */
+      margin-top: -2.75em; /* 30 */
+    }
+    .imagelightbox-arrow-left	{ left: 0; }
+    .imagelightbox-arrow-right	{ right: 0; }
+  }
+  .gal img {
+    height:0px;
+    width:0px;
+  }
+
+  .kepfelirat {box-sizing:content-box; width:100%; overflow:hidden; position:absolute; bottom:0px; min-height:20px; max-height:25%; background-color:rgba(0,0,0,0.5); color:white; text-align:center; text-decoration:none; font-size:9pt; line-height:11pt; padding-top:3px}
+  .kepkeret {-moz-border-radius:6px; -webkit-border-radius:6px; -khtml-border-radius:6px; border-radius:6px; box-sizing:content-box; padding:3px; background-color:#e9e9e9; border:1px #bebebe solid;}
+
+  /*===============================================================================*/
+
+      body {font-family: Ubuntu, Arial, Helvetica, sans-serif;}
+        body {font-size: 14px;}
+          h1, h2, h3, h4, h5, h6, .open-button, .menu li, .read-more, #submit, #submit-comm, .post-title-page, .widgettitle, .widgettitle2 {font-family: Oswald, sans-serif;}
+      
+
+</style>
+
+  <!-- A HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" href="admin/images/ixt7.png" />
+  <script src="bootstrap/js/jquery.min.js"></script>
+
+  <script src="admin/js/elvalasztas.js"></script>
+  <script src="admin/js/jquery.twbsPagination.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="admin/lib/cookiebar/jquery.cookiebar.css" />
+    <script type="text/javascript" src="admin/lib/cookiebar/jquery.cookiebar.js"></script>
+
+    <script>
+       $(document).ready(function() {
+          $.cookieBar({
+            message: 'A böngésződben adatokat (cookie-kat, más néven sütiket) tárolunk a felhasználói élmény javítása érdekében.',
+            acceptText: 'Megértettem, elfogadom',
+            fixed: true,
+            bottom: true,
+            pretag: 'wembino-91553'
+                      });
+       });
+    </script>
+    
+  <!-- minden oldal fejlécébe kerülő kód -->
+<script src="//cdn.wordart.com/wordart.min.js" async defer></script>
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="row felsosor">
+              <div class="col-sm-7 logo" style="max-height:100px">
+          <h1 id="logo"><a href="index.php"></a></h1>
+        </div>
+              <div class="open-hours" style="float:right">
+        <div class="open-text">
+        </div>
+              </div>
+    </div>
+  </div>
+  <div class="container desktop-menu">
+    <div id="menu-holder">
+      <ul class="menu">
+              <li ><a id="menu_cur0_act999" href="index.php">Kezdőlap</a>
+                          </li>
+              <li ><a id="menu_cur1_act999" href="digitalis-kultura">Digitális kultúra</a>
+                          </li>
+              <li ><a id="menu_cur2_act999" href="info">Informatika</a>
+                          </li>
+              <li ><a id="menu_cur3_act999" href="interaktiv-tesztek">Interaktív tesztek</a>
+                          </li>
+              <li ><a id="menu_cur4_act999" href="hittan-etika">Hittan-Etika</a>
+                          </li>
+              <li ><a id="menu_cur5_act999" href="bibliai-modulok">Bibliai modulok</a>
+                          </li>
+              <li ><a id="menu_cur6_act999" href="uzenetek">TikTok üzi</a>
+                          </li>
+              <li ><a id="menu_cur7_act999" href="tanitasok">Face Live</a>
+                          </li>
+              <li ><a id="menu_cur8_act999" href="blog">Blog</a>
+                          </li>
+              <li ><a id="menu_cur9_act999" href="kapcsolat-10">Kapcsolat</a>
+                          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-menu" style="display:none">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-mobile-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Menü megjelenítése</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.php">
+                      <img id="mobile-logo" src="themes/css/images/ixt7.png" style="display:none">
+                    </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-mobile-navbar-collapse">
+        <ul class="nav navbar-nav">
+                          <li ><a id="menu_cur0_act999" href="index.php">Kezdőlap</a></li>
+                              </li>
+                              <li ><a id="menu_cur1_act999" href="digitalis-kultura">Digitális kultúra</a></li>
+                              </li>
+                              <li ><a id="menu_cur2_act999" href="info">Informatika</a></li>
+                              </li>
+                              <li ><a id="menu_cur3_act999" href="interaktiv-tesztek">Interaktív tesztek</a></li>
+                              </li>
+                              <li ><a id="menu_cur4_act999" href="hittan-etika">Hittan-Etika</a></li>
+                              </li>
+                              <li ><a id="menu_cur5_act999" href="bibliai-modulok">Bibliai modulok</a></li>
+                              </li>
+                              <li ><a id="menu_cur6_act999" href="uzenetek">TikTok üzi</a></li>
+                              </li>
+                              <li ><a id="menu_cur7_act999" href="tanitasok">Face Live</a></li>
+                              </li>
+                              <li ><a id="menu_cur8_act999" href="blog">Blog</a></li>
+                              </li>
+                              <li ><a id="menu_cur9_act999" href="kapcsolat-10">Kapcsolat</a></li>
+                              </li>
+                      </ul>
+      </div>
+    </nav>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 top-img">
+          <img src="admin/images/default-clinic-tulips.png" alt="fejléckép" />
+            <h1 class="post-title-page">Nem létező oldal</h1>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+    <div class="wrap-content">
+      <div class="row">
+        <div class="col-sm-8 all-posts">
+          <div class="post-solo">
+            <div style="text-align:center; padding-bottom:20px">
+              <p></p>
+              <h3>A keresett oldalt sajnos nem találjuk.</h3>
+              <p><img src="admin/img/404.png" alt="404-es hiba - a keresett oldalt nem találjuk" /></p>
+              <h4>A kellemetlenségért elnézést kérünk!</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-4 sidebar">
+        <ul>
+              <li class="widget widget_text">
+                  <h2 class="widgettitle">Támogatás</h2>
+                <div class="textwidget">
+<p style="text-align: left;"><span>Ha hasznosnak találtad a weboldal anyagait, az alábbi linken tudod támogatni az oldal fenntartásának és fejlesztésének költségeit:<br /><br /></span></p>
+<p style="text-align: center;"><span><span> </span><span><a href="https://revolut.me/laszlobaranyi" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://revolut.me/laszlobaranyi&amp;source=gmail&amp;ust=1692563835635000&amp;usg=AOvVaw3u5YhxsyBfyQpao5hVVYx2"><span style="text-decoration: underline; color: #0000ff;">https://revolut.me/<wbr />laszlobaranyi</span><br /><br /><img src="http://baranyilaszlozsolt.com/admin/images/revolut.jpg" height="150" width="150" style="display: block; margin-left: auto; margin-right: auto;" /></a></span></span></p>                </div>
+              </li>
+              <li class="widget widget_text">
+                  <h2 class="widgettitle">Google Search</h2>
+                <div class="textwidget">
+<!--Google kereso indul--><form action="http://www.google.co.hu/search" method="get">Ha valamit nem találsz, keress rá :)<br />
+<table width="340" height="55">
+<tbody>
+<tr>
+<td align="center" width="310" style="text-align: left;"><input type="text" maxlength="100" name="q" size="27" value="" /> <input type="submit" name="btnG" value=" Search " /><br />   <input type="radio" name="sitesearch" value="" />  www   <input type="radio" checked="checked" name="sitesearch" value="https://baranyilaszlozsolt.com/" />  baranyilaszlozsolt.com</td>
+</tr>
+</tbody>
+</table>
+</form><!--Google kereso vege-->                </div>
+              </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+                    <style>
+                      .uzenetablak {
+                        display:none;
+                        line-height:22pt;
+                        width:auto;
+                        max-width:95%;
+                        height:auto;
+                        background:white;
+                        padding:20px;
+                        color:black;
+                        font-size:18pt;
+                        text-align:center;
+                        box-shadow: 0px 0px 40px #ffffff;
+                        -moz-border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                        -khtml-border-radius: 20px;
+                        border-radius: 20px;
+                      }
+                    </style>
+
+                    <div id="siker_reg" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Sikeres regisztráció                      <br><br>
+                      <font style="font-size:12pt">
+                        A jelszavadat e-mailben kapod meg,<br>kérlek ellenőrizd a postaládádat!                      </font>
+                    </div>
+
+                    <div id="marvolt_reg" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                     Az e-mail címedet már korábban regisztráltuk!                      <br><br>
+                      <font style="font-size:12pt">
+                        Az új jelszavadat e-mailben kapod meg,<br>kérlek ellenőrizd a postaládádat!                      </font>
+                    </div>
+
+                    <div id="reggeljen_kesobb" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                     Próbáld később                      <br><br>
+                      <font style="font-size:12pt">
+                        5 percen belül egy IP címről csak egy regisztrációt fogadunk el. Kérlek próbáld újra később!                      </font>
+                    </div>
+
+                    <div id="reggeljen_kesobb" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                     Próbáld később                      <br><br>
+                      <font style="font-size:12pt">
+                        5 percen belül egy IP címről csak egy regisztrációt fogadunk el. Kérlek próbáld újra később!                      </font>
+                    </div>
+
+                    <div id="rossz_captcha" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Hibás ellenőrző kód                      <br><br>
+                      <font style="font-size:12pt">
+                        Hibás ellenőrző kódot adtál meg, az űrlap elküldése nem sikerült.                      </font>
+                    </div>
+
+                    <div id="ures_email" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Üres e-mail cím...                      <br><br>
+                      <font style="font-size:12pt">
+                        Kérlek add meg az e-mail címedet,<br>és próbálkozz újra!                      </font>
+                    </div>
+
+                    <div id="belepes_hiba" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Hibás adatok                      <br><br>
+                      <font style="font-size:12pt">
+                        Kérlek add meg a helyes e-mail címet<br>és jelszót, majd próbálkozz újra!                      </font>
+                    </div>
+
+                    <div id="nemtalalom" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Hibás e-mail cím                      <br><br>
+                      <font style="font-size:12pt">
+                        A megadott email címmel<br>nincs regisztrált felhasználónk.                      </font>
+                    </div>
+
+                    <div id="sikeres_modositas" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Sikeres módosítás                      <br><br>
+                      <font style="font-size:12pt">
+                        A személyes adataidat sikeresen módosítottad,<br>az új adatokat elmentettük.                      </font>
+                    </div>
+
+                    <div id="email_foglalt" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Hibás e-mail cím                      <br><br>
+                      <font style="font-size:12pt">
+                        A megadott e-mail cím már foglalt.<br>Kérlek adj meg egy másik e-mail címet!                      </font>
+                    </div>
+
+                    <div id="email_rossz" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Hibás e-mail cím                      <br><br>
+                      <font style="font-size:12pt">
+                        A megadott e-mail cím formátuma hibás,<br>kérlek javítsd ki!                      </font>
+                    </div>
+
+                    <div id="elfogadni" class="uzenetablak">
+                      <button class="b-close" style="border-radius:7px 7px 7px 7px;font:bold 100% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px">X</button>
+                      Valamit elfelejtettél?                      <br><br>
+                      <font style="font-size:12pt">
+                        A regisztráció feltétele, hogy elolvasod és elfogadod<br>az ÁSZF-et és az Adatkezelési Tájékoztatót.                      </font>
+                    </div>
+
+                    <script type="text/javascript" src="admin/js/jquery.bpopup.min.js"></script>
+
+                    <script>
+                      
+                      function helyescim(emcim) {
+                        if (emcim.length<8) {
+                          return false;
+                        }
+                        else if (emcim.lastIndexOf("@") < 2) {
+                          return false;
+                        }
+                        else if (emcim.lastIndexOf(".") < 5) {
+                          return false;
+                        }
+                        else if (emcim.lastIndexOf(".") < emcim.lastIndexOf("@")) {
+                          return false;
+                        }
+                        else {
+                          return true;
+                        }
+                      }
+
+                    </script>
+  <div class="container">
+    <div id="footer">
+      <div class="row">
+              <div class="col-sm-4 footer-box">
+                <div class="footer-widget widget_text elvalaszt">
+                  Közvetlen üzenet küldéshez KAPCSOLAT menü fent!                </div>
+              </div>
+                    </div>
+
+      <div class="row copy-soc">
+        <div id="copyright" class="col-sm-8">
+          <div>© Copyright (2011-) New 2017-2023 I Web Admin: Baranyi László Zsolt I Web Hosting: www.hostgator.com          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Mai látogatók: <b>21</b> (összesen 166505)<div style="height:20px"></div>          </div>
+        </div>
+        <div class="col-sm-4 social">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class="column-clear"></div>
+    </div>
+  </div>
+
+
+  <p id="backTop"><a href="#top">Fel&uarr;</a></p>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="admin/js/jquery-ui.min.js"></script>
+  <script src="admin/js/jquery.qtip.min.js"></script>
+  <script src="admin/js/fancybox/jquery.fancybox.js"></script>
+  <script src='admin/js/jquery.mousewheel.min.js'></script>
+  <script src='admin/js/jquery.dataTables.min.js'></script>
+  <!-- <script src="admin/js/menu.js"></script> -->
+  <script src="admin/js/jquery.flexslider-min.js"></script>
+  <script src="admin/js/init.js"></script>
+  <script src="admin/js/scrolltop.js"></script>
+  <script src="admin/js/imagelightbox.js"></script>
+
+  <!-- minden oldal láblécébe kerülő kód -->
+    <script>
+
+      $( function() {
+
+        var
+
+        // OVERLAY
+
+        overlayOn = function()
+        {
+          $( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+        },
+        overlayOff = function()
+        {
+          $( '#imagelightbox-overlay' ).remove();
+        },
+
+
+        // CLOSE BUTTON
+
+        closeButtonOn = function( instance )
+        {
+          $( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+        },
+        closeButtonOff = function()
+        {
+          $( '#imagelightbox-close' ).remove();
+        },
+
+
+        // CAPTION
+
+        captionOn = function()
+        {
+          var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
+          if( description.length > 0 )
+            $( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+        },
+        captionOff = function()
+        {
+          $( '#imagelightbox-caption' ).remove();
+        },
+
+        // ARROWS
+
+        arrowsOn = function( instance, selector )
+        {
+          var $arrows = $( '<button type="button" class="imagelightbox-arrow imagelightbox-arrow-left"></button><button type="button" class="imagelightbox-arrow imagelightbox-arrow-right"></button>' );
+
+          $arrows.appendTo( 'body' );
+
+          $arrows.on( 'click touchend', function( e )
+          {
+            e.preventDefault();
+
+            var $this	= $( this ),
+              $target	= $( selector + '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ),
+              index	= $target.index( selector );
+
+            if( $this.hasClass( 'imagelightbox-arrow-left' ) )
+            {
+              index = index - 1;
+              if( !$( selector ).eq( index ).length )
+                index = $( selector ).length;
+                //instance.quitImageLightbox();
+            }
+            else
+            {
+              index = index + 1;
+              if( !$( selector ).eq( index ).length )
+                index = 0;
+                //instance.quitImageLightbox();
+            }
+
+            instance.switchImageLightbox( index );
+            return false;
+          });
+        },
+        arrowsOff = function()
+        {
+          $( '.imagelightbox-arrow' ).remove();
+        };
+
+        var selectorA = '.gal';
+        var instanceA = $( selectorA ).imageLightbox({
+          onLoadStart: function() { captionOff(); },
+			    onLoadEnd:	 function() { $( '.imagelightbox-arrow' ).css( 'display', 'block' ); captionOn(); },
+          onStart: 	 function() { overlayOn(); closeButtonOn( instanceA ); arrowsOn( instanceA, selectorA ); },
+			    onEnd:	 	 function() { arrowsOff(); captionOff(); overlayOff(); closeButtonOff();},
+          quitOnEnd: false
+        });
+      });
+    </script>
+</body>
+</html>

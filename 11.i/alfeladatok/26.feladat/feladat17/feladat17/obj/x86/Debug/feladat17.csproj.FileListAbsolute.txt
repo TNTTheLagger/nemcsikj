@@ -1,0 +1,5 @@
+E:\Nemcsik\feladat17\feladat17\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Nemcsik\feladat17\feladat17\bin\Debug\feladat17.exe
+E:\Nemcsik\feladat17\feladat17\bin\Debug\feladat17.pdb
+E:\Nemcsik\feladat17\feladat17\obj\x86\Debug\feladat17.exe
+E:\Nemcsik\feladat17\feladat17\obj\x86\Debug\feladat17.pdb

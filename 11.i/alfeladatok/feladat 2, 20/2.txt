@@ -1,0 +1,25 @@
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int sum = 0;
+double pi;
+
+int summ()
+{
+  for (int i = 1; i < 101; i++)
+  {
+     sum+=i;        
+  }      
+  return sum;
+}
+
+int main(int argc, char *argv[])
+{
+    sum = summ();
+    cout<<"Az elso 100 szam osszeadva: "<<sum<<endl; 
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

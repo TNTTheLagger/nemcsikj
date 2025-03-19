@@ -1,0 +1,13 @@
+
+Dátum	Abádszalóki medence (a strandnál)	Sarudi medence (az V-ös öblítõcsatorna vonalában)	Poroszlói medence (a VI-os öblítõcsatorna vonalában)	Tiszavalki medence
+(a Dühös-lapos területén)	Tisza folyó Tiszabábolnánál (a IX-es öblítõcsatorna fölött)
+2011.08.30.	21,3	25,8	21	11,8	25,3	22	11,4	26,1	23	18	25,8	22,5	24,6	25,8	23
+
+Település	Strand 	Mintavételi gyakoriság	Vizsgálat idõpontja	Minõsítés	Üzemeltetõ
+Abádszalók	Települési strand	2 hetente	2011.08.01.	kiváló	Önkormányzati
+Tiszafüred	Települési strand	2 hetente	2011.08.01.	kiváló	Tisza-tó 2005 Kht.
+Kisköre	Települési strand	2 hetente	2011.08.08.	kiváló	Önkormányzati
+Tiszanána	Települési strand	2 hetente	2011.08.08.	kiváló	ENTER-NÁNA Kht.
+Sarud	Települési strand	2 hetente	2011.08.11.	kiváló	EUROHOME-2000 Kft
+Poroszló	Települési strand	2 hetente	2011.08.08.	kiváló	POPULUSZ Kft
+

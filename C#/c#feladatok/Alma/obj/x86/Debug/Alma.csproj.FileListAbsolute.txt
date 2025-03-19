@@ -1,0 +1,5 @@
+C:\Users\Kristonda\Desktop\Alma\bin\Debug\Alma.exe
+C:\Users\Kristonda\Desktop\Alma\bin\Debug\Alma.pdb
+C:\Users\Kristonda\Desktop\Alma\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kristonda\Desktop\Alma\obj\x86\Debug\Alma.exe
+C:\Users\Kristonda\Desktop\Alma\obj\x86\Debug\Alma.pdb

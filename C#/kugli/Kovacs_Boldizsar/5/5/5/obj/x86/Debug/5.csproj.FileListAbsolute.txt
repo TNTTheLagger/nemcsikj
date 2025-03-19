@@ -1,0 +1,10 @@
+G:\Visual Studio\Kovacs_Boldizsar\5\5\5\bin\Debug\5.exe
+G:\Visual Studio\Kovacs_Boldizsar\5\5\5\bin\Debug\5.pdb
+G:\Visual Studio\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.csprojResolveAssemblyReference.cache
+G:\Visual Studio\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.exe
+G:\Visual Studio\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.pdb
+C:\Users\nemcsikj\Documents\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.exe
+C:\Users\nemcsikj\Documents\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.pdb
+C:\Users\nemcsikj\Documents\Kovacs_Boldizsar\5\5\5\obj\x86\Debug\5.csprojResolveAssemblyReference.cache
+C:\Users\nemcsikj\Documents\Kovacs_Boldizsar\5\5\5\bin\Debug\5.exe
+C:\Users\nemcsikj\Documents\Kovacs_Boldizsar\5\5\5\bin\Debug\5.pdb

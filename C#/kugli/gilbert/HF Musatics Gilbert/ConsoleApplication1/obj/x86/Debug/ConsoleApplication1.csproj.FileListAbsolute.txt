@@ -1,0 +1,24 @@
+c:\users\user\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\user\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\user\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+c:\users\user\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Letöltések\Házi\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Letöltések\Házi\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Letöltések\Házi\HF\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Letöltések\Házi\HF\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Letöltések\Házi\HF\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Letöltések\Házi\HF\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Letöltések\Házi\HF\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+H:\Házi feladat\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+H:\Házi feladat\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+G:\Programozás házi\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+G:\Programozás házi\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+G:\Programozás házi\HF Musatics Gilbert\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+G:\Programozás házi\HF Musatics Gilbert\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+G:\Programozás házi\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+J:\Mátrix 12 i\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+J:\Mátrix 12 i\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+J:\Mátrix 12 i\HF Musatics Gilbert\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+J:\Mátrix 12 i\HF Musatics Gilbert\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+J:\Mátrix 12 i\HF Musatics Gilbert\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

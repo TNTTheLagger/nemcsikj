@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1401260516 source:g:\prog\c++\grafika_rekurrrrrrrziv\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<graphics.h>
+	<time.h>
+	<windows.h>
+	<iostream>
+	<cmath>
+

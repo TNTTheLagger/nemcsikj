@@ -1,0 +1,5 @@
+Skoda        217  Sopron
+Mercedes     106  Siofok
+Opel         46   Esztergom
+Suzuki       179  Miskolcs 
+Ford         245  Nyiregyhaza         

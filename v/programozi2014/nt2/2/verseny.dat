@@ -1,0 +1,34 @@
+4
+fal
+60000
+7
+3
+1 1 1 2 2 2 2
+1 1 1 3 3 3 3
+1 1 1 3 4 4 4
+utcak
+60000
+7
+2
+1 1 1 1 2 2 2
+2 2 2 2 4 4 4
+tabla
+60000
+14
+2
+1 1 1 1 1 1 1 1 1 1 1 1 1 1
+0 0 0 0 2 3 2 3 2 3 2 3 2 4
+mozi
+60000
+11
+2
+1 1 1 1 1 1 1 2 2 2 2
+1 1 1 1 1 2 2 3 3 3 3
+
+1. sor: feladatok sz ma
+egy feladat adatai:
+1. sot: FeladatN‚v
+2. sor: Id‹limit
+3. sor: Tesztesetek sz ma
+4. sor: R‚szfeladatok sz ma
+5.-annyi sor, ah ny r‚szfeladat van, soronk‚nt a pontsz m/teszteset

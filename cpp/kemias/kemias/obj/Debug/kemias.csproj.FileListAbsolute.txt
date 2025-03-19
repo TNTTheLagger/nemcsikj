@@ -1,0 +1,7 @@
+J:\cpp\kemias\kemias\obj\Debug\kemias.csprojAssemblyReference.cache
+J:\cpp\kemias\kemias\obj\Debug\kemias.csproj.CoreCompileInputs.cache
+J:\cpp\kemias\kemias\bin\Debug\kemias.exe.config
+J:\cpp\kemias\kemias\bin\Debug\kemias.exe
+J:\cpp\kemias\kemias\bin\Debug\kemias.pdb
+J:\cpp\kemias\kemias\obj\Debug\kemias.exe
+J:\cpp\kemias\kemias\obj\Debug\kemias.pdb

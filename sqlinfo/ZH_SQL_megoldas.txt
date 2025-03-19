@@ -1,0 +1,33 @@
+1. feladat
+
+SELECT ORSZAG.nev
+FROM ORSZAG
+WHERE ORSZAG.lelekszam = (SELECT MIN(ORSZAG.lelekszam) FROM ORSZAG);
+
+2. feladat
+
+SELECT VAROS.nev
+FROM VAROS
+WHERE VAROS.orszagnev = "Magyarország"
+AND VAROS.lelekszam = (SELECT MIN(VAROS.lelekszam) FROM VAROS WHERE VAROS.orszagnev = "Magyarország");
+
+3. feladat
+
+SELECT ORSZAG.nev
+FROM ORSZAG
+WHERE ORSZAG.lelekszam < (SELECT AVG(ORSZAG.lelekszam) FROM ORSZAG)
+ORDER BY ORSZAG.nev;
+
+4. feladat
+
+SELECT ORSZAG.nev, SUM(VAROS.lelekszam)
+FROM ORSZAG, VAROS
+WHERE ORSZAG.nev=VAROS.orszagnev
+GROUP BY ORSZAG.nev
+HAVING SUM(VAROS.lelekszam)>1000000;
+
+5. feladat
+
+SELECT COUNT(VAROS.azonosito)
+FROM VAROS
+WHERE VAROS.orszagnev IN (SELECT ORSZAG.nev FROM ORSZAG WHERE ORSZAG.lelekszam > (SELECT AVG(ORSZAG.lelekszam) FROM ORSZAG) * 2);

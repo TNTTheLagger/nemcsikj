@@ -1,0 +1,45 @@
+﻿nevkod;megnevezes
+2;Ka Pál
+3;Bekre Pál
+4;Para Zita
+5;Mor Zsolt
+6;Éde Sanyi
+7;Fá Zoltán
+8;Magyar Bank NyRt.
+9;Bánta Más
+10;Joh Anna
+11;Fut Balázs
+12;Fara Gábor
+13;Apdét Norbi
+14;Kolesz Teri
+15;Vér Gergő
+16;Ró Kata
+17;Ber Talan
+18;Ha Sándor
+19;Compu Teri
+20;Bor Judit
+21;Remé Lilla
+22;Peri Feri
+23;Csoki Miki
+24;Szeméthegy ZRt.
+25;Amper ZRt.
+26;Tisztavíz Kft.
+30;Barkácsáruház
+35;Tüzép
+36;Mit Ádám
+44;Teszkó Kft.
+46;Gyepes lászló
+47;Cserépfölde Kft.
+53;Biztosító RT
+54;Dél-Üvért
+55;23. sz. ügyvédi iroda
+56;Házipénztár
+58;Cserkész Bt.
+60;Ipari Kereskedelmi Kft.
+61;Kertész Bolt
+62;Kramnyik Bt.
+63;Parír-Írószer
+64;Csapágy Bazár
+65;Műszer Kft.
+66;Vasbolt
+67;Phone Kft.

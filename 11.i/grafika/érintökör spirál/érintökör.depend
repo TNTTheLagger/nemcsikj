@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1401097325 source:g:\érintökör\main.cpp
+	<iostream>
+	"graphics.h"
+	<windows.h>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+
+1399457781 g:\érintökör\graphics.h
+	<math.h>
+

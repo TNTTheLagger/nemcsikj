@@ -1,0 +1,27 @@
+Program Lecke3;
+
+uses Crt;
+var st:string;
+
+function CharStat(s:string):Byte;
+var stat:Array[0..255] of Byte;
+    sum,i:Byte;
+
+begin
+sum:=0;
+For i := 0 to 255 do stat[i]:=0;
+For i := 1 to length(s) do
+  Inc(stat[Ord(s[i])]);
+For i := 0 to 255 do
+  If stat[i]>0 then Inc(sum);
+Charstat:=sum;
+end;
+
+begin
+Clrscr;
+Writeln('K‚rek egy sz”veget:');
+REadln(st);
+Writeln('A sz”vegben ',CharStat(st),' f‚le karakter fordul el‹.');
+REadkey;
+Clrscr;
+end.
